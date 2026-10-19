@@ -1,0 +1,6073 @@
+
+Guild Navigator
+Get page snapshot
+
+Saved 466 elements to a JSON file.
+
+{
+  "url": "https://codeforces.com/",
+  "title": "Codeforces",
+  "capturedAt": 1792391808829,
+  "elements": [
+    {
+      "id": "el-1",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/",
+      "visible": true,
+      "rect": {
+        "x": 181.5,
+        "y": 65.5,
+        "width": 277.5,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-2",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/?locale=en",
+      "visible": true,
+      "rect": {
+        "x": 1301.61669921875,
+        "y": 24.5,
+        "width": 24,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-3",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/?locale=ru",
+      "visible": true,
+      "rect": {
+        "x": 1329.5,
+        "y": 24.5,
+        "width": 24,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-4",
+      "tag": "a",
+      "label": "Enter",
+      "href": "https://codeforces.com/enter?back=%2F",
+      "visible": true,
+      "rect": {
+        "x": 1256.5166015625,
+        "y": 40.5,
+        "width": 33.44999694824219,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-5",
+      "tag": "a",
+      "label": "Register",
+      "href": "https://codeforces.com/register",
+      "visible": true,
+      "rect": {
+        "x": 1301.36669921875,
+        "y": 40.5,
+        "width": 52.133331298828125,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-6",
+      "tag": "a",
+      "label": "HOME",
+      "href": "https://codeforces.com/",
+      "visible": true,
+      "rect": {
+        "x": 200,
+        "y": 96.5,
+        "width": 33.75,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-7",
+      "tag": "a",
+      "label": "TOP",
+      "href": "https://codeforces.com/top",
+      "visible": true,
+      "rect": {
+        "x": 250.5500030517578,
+        "y": 96.5,
+        "width": 21.449996948242188,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-8",
+      "tag": "a",
+      "label": "CATALOG",
+      "href": "https://codeforces.com/catalog",
+      "visible": true,
+      "rect": {
+        "x": 288.79998779296875,
+        "y": 96.5,
+        "width": 48.23333740234375,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-9",
+      "tag": "a",
+      "label": "CONTESTS",
+      "href": "https://codeforces.com/contests",
+      "visible": true,
+      "rect": {
+        "x": 353.83331298828125,
+        "y": 96.5,
+        "width": 55,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-10",
+      "tag": "a",
+      "label": "GYM",
+      "href": "https://codeforces.com/gyms",
+      "visible": true,
+      "rect": {
+        "x": 425.6333312988281,
+        "y": 96.5,
+        "width": 25.050003051757812,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-11",
+      "tag": "a",
+      "label": "PROBLEMSET",
+      "href": "https://codeforces.com/problemset",
+      "visible": true,
+      "rect": {
+        "x": 467.48333740234375,
+        "y": 96.5,
+        "width": 74.41665649414062,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-12",
+      "tag": "a",
+      "label": "GROUPS",
+      "href": "https://codeforces.com/groups",
+      "visible": true,
+      "rect": {
+        "x": 558.7000122070312,
+        "y": 96.5,
+        "width": 44.866668701171875,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-13",
+      "tag": "a",
+      "label": "RATING",
+      "href": "https://codeforces.com/ratings",
+      "visible": true,
+      "rect": {
+        "x": 620.36669921875,
+        "y": 96.5,
+        "width": 39.98333740234375,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-14",
+      "tag": "a",
+      "label": "EDU",
+      "href": "https://codeforces.com/edu/courses",
+      "visible": true,
+      "rect": {
+        "x": 677.1500244140625,
+        "y": 96.5,
+        "width": 22.350006103515625,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-15",
+      "tag": "a",
+      "label": "API",
+      "href": "https://codeforces.com/apiHelp",
+      "visible": true,
+      "rect": {
+        "x": 716.2999877929688,
+        "y": 96.5,
+        "width": 18.449996948242188,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-16",
+      "tag": "a",
+      "label": "CALENDAR",
+      "href": "https://codeforces.com/calendar",
+      "visible": true,
+      "rect": {
+        "x": 751.5499877929688,
+        "y": 96.5,
+        "width": 58.06666564941406,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-17",
+      "tag": "a",
+      "label": "HELP",
+      "href": "https://codeforces.com/help",
+      "visible": true,
+      "rect": {
+        "x": 826.4166870117188,
+        "y": 96.5,
+        "width": 28.349990844726562,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-18",
+      "tag": "input",
+      "label": "",
+      "href": null,
+      "visible": false,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "id": "el-19",
+      "tag": "input",
+      "label": "",
+      "href": null,
+      "visible": true,
+      "rect": {
+        "x": 1229.5,
+        "y": 95.5,
+        "width": 113,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-20",
+      "tag": "input",
+      "label": "",
+      "href": null,
+      "visible": false,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "id": "el-21",
+      "tag": "a",
+      "label": "Codeforces Round (Div. 2)",
+      "href": "https://codeforces.com/contests/2277",
+      "visible": true,
+      "rect": {
+        "x": 1131.1500244140625,
+        "y": 227,
+        "width": 164.68333435058594,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-22",
+      "tag": "a",
+      "label": "Register now »",
+      "href": "https://codeforces.com/contestRegistration/2277",
+      "visible": true,
+      "rect": {
+        "x": 1166.816650390625,
+        "y": 259,
+        "width": 93.36666870117188,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-23",
+      "tag": "a",
+      "label": "Benq",
+      "href": "https://codeforces.com/profile/Benq",
+      "visible": true,
+      "rect": {
+        "x": 1178.5,
+        "y": 377,
+        "width": 31.5,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-24",
+      "tag": "a",
+      "label": "Kevin114514",
+      "href": "https://codeforces.com/profile/Kevin114514",
+      "visible": true,
+      "rect": {
+        "x": 1156.4000244140625,
+        "y": 402.5,
+        "width": 75.70001220703125,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-25",
+      "tag": "a",
+      "label": "jiangly",
+      "href": "https://codeforces.com/profile/jiangly",
+      "visible": true,
+      "rect": {
+        "x": 1174.38330078125,
+        "y": 428,
+        "width": 39.73333740234375,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-26",
+      "tag": "a",
+      "label": "turmax",
+      "href": "https://codeforces.com/profile/turmax",
+      "visible": true,
+      "rect": {
+        "x": 1173.183349609375,
+        "y": 453.5,
+        "width": 42.116668701171875,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-27",
+      "tag": "a",
+      "label": "tourist",
+      "href": "https://codeforces.com/profile/tourist",
+      "visible": true,
+      "rect": {
+        "x": 1174.75,
+        "y": 479,
+        "width": 39,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-28",
+      "tag": "a",
+      "label": "Um_nik",
+      "href": "https://codeforces.com/profile/Um_nik",
+      "visible": true,
+      "rect": {
+        "x": 1171.4833984375,
+        "y": 504.5,
+        "width": 45.51666259765625,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-29",
+      "tag": "a",
+      "label": "strapple",
+      "href": "https://codeforces.com/profile/strapple",
+      "visible": true,
+      "rect": {
+        "x": 1169.7166748046875,
+        "y": 530,
+        "width": 49.066680908203125,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-30",
+      "tag": "a",
+      "label": "squareOf105",
+      "href": "https://codeforces.com/profile/squareOf105",
+      "visible": true,
+      "rect": {
+        "x": 1156.066650390625,
+        "y": 555.5,
+        "width": 76.35000610351562,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-31",
+      "tag": "a",
+      "label": "heuristica",
+      "href": "https://codeforces.com/profile/heuristica",
+      "visible": true,
+      "rect": {
+        "x": 1164.5166015625,
+        "y": 581,
+        "width": 59.4666748046875,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-32",
+      "tag": "a",
+      "label": "maroonrk",
+      "href": "https://codeforces.com/profile/maroonrk",
+      "visible": true,
+      "rect": {
+        "x": 1165.2166748046875,
+        "y": 606.5,
+        "width": 58.066680908203125,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-33",
+      "tag": "a",
+      "label": "Countries",
+      "href": "https://codeforces.com/ratings/countries",
+      "visible": true,
+      "rect": {
+        "x": 1080.550048828125,
+        "y": 631.4500122070312,
+        "width": 47.08332824707031,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-34",
+      "tag": "a",
+      "label": "Cities",
+      "href": "https://codeforces.com/ratings/cities",
+      "visible": true,
+      "rect": {
+        "x": 1138.7833251953125,
+        "y": 631.4500122070312,
+        "width": 27.51666259765625,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-35",
+      "tag": "a",
+      "label": "Organizations",
+      "href": "https://codeforces.com/ratings/organizations",
+      "visible": true,
+      "rect": {
+        "x": 1177.449951171875,
+        "y": 631.4500122070312,
+        "width": 67.86666870117188,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-36",
+      "tag": "a",
+      "label": "View all →",
+      "href": "https://codeforces.com/ratings",
+      "visible": true,
+      "rect": {
+        "x": 1294.683349609375,
+        "y": 631.4500122070312,
+        "width": 51.76666259765625,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-37",
+      "tag": "a",
+      "label": "Qingyu",
+      "href": "https://codeforces.com/profile/Qingyu",
+      "visible": true,
+      "rect": {
+        "x": 1172.5999755859375,
+        "y": 731.4000244140625,
+        "width": 43.2833251953125,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-38",
+      "tag": "a",
+      "label": "nik_exists",
+      "href": "https://codeforces.com/profile/nik_exists",
+      "visible": true,
+      "rect": {
+        "x": 1163.933349609375,
+        "y": 756.9000244140625,
+        "width": 60.633331298828125,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-39",
+      "tag": "a",
+      "label": "maspy",
+      "href": "https://codeforces.com/profile/maspy",
+      "visible": true,
+      "rect": {
+        "x": 1174.433349609375,
+        "y": 782.4000244140625,
+        "width": 39.616668701171875,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-40",
+      "tag": "a",
+      "label": "AmShZ",
+      "href": "https://codeforces.com/profile/AmShZ",
+      "visible": true,
+      "rect": {
+        "x": 1172.183349609375,
+        "y": 807.9000244140625,
+        "width": 44.133331298828125,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-41",
+      "tag": "a",
+      "label": "Um_nik",
+      "href": "https://codeforces.com/profile/Um_nik",
+      "visible": true,
+      "rect": {
+        "x": 1171.4833984375,
+        "y": 833.4000244140625,
+        "width": 45.51666259765625,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-42",
+      "tag": "a",
+      "label": "Errichto",
+      "href": "https://codeforces.com/profile/Errichto",
+      "visible": true,
+      "rect": {
+        "x": 1170.2333984375,
+        "y": 858.9000244140625,
+        "width": 48.0333251953125,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-43",
+      "tag": "a",
+      "label": "adamant",
+      "href": "https://codeforces.com/profile/adamant",
+      "visible": true,
+      "rect": {
+        "x": 1168.3333740234375,
+        "y": 884.4000244140625,
+        "width": 51.833343505859375,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-44",
+      "tag": "a",
+      "label": "BledDest",
+      "href": "https://codeforces.com/profile/BledDest",
+      "visible": true,
+      "rect": {
+        "x": 1166.8499755859375,
+        "y": 909.9000244140625,
+        "width": 54.7833251953125,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-45",
+      "tag": "a",
+      "label": "maroonrk",
+      "href": "https://codeforces.com/profile/maroonrk",
+      "visible": true,
+      "rect": {
+        "x": 1165.2166748046875,
+        "y": 935.4000244140625,
+        "width": 58.066680908203125,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-46",
+      "tag": "a",
+      "label": "Proof_by_QED",
+      "href": "https://codeforces.com/profile/Proof_by_QED",
+      "visible": true,
+      "rect": {
+        "x": 1149.933349609375,
+        "y": 960.9000244140625,
+        "width": 88.61666870117188,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-47",
+      "tag": "a",
+      "label": "View all →",
+      "href": "https://codeforces.com/top-contributed",
+      "visible": true,
+      "rect": {
+        "x": 1294.683349609375,
+        "y": 985.8499755859375,
+        "width": 51.76666259765625,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-48",
+      "tag": "input",
+      "label": "",
+      "href": null,
+      "visible": false,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "id": "el-49",
+      "tag": "input",
+      "label": "",
+      "href": null,
+      "visible": true,
+      "rect": {
+        "x": 1158.566650390625,
+        "y": 1070.300048828125,
+        "width": 165.93333435058594,
+        "height": 20
+      }
+    },
+    {
+      "id": "el-50",
+      "tag": "input",
+      "label": "",
+      "href": null,
+      "visible": true,
+      "rect": {
+        "x": 1288.566650390625,
+        "y": 1104.300048828125,
+        "width": 49.93333435058594,
+        "height": 21.98333740234375
+      }
+    },
+    {
+      "id": "el-51",
+      "tag": "input",
+      "label": "",
+      "href": null,
+      "visible": false,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "id": "el-52",
+      "tag": "a",
+      "label": "ChallaAjay",
+      "href": "https://codeforces.com/profile/ChallaAjay",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1209.550048828125,
+        "width": 57.69999694824219,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-53",
+      "tag": "a",
+      "label": "Is getting to 1600 about thinking, or about memorizing tricks? My unpopular take",
+      "href": "https://codeforces.com/blog/entry/157834",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1208.050048828125,
+        "width": 252.3333282470703,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-54",
+      "tag": "a",
+      "label": "Proof_by_QED",
+      "href": "https://codeforces.com/profile/Proof_by_QED",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1250.4000244140625,
+        "width": 79.71665954589844,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-55",
+      "tag": "a",
+      "label": "About example test cases",
+      "href": "https://codeforces.com/blog/entry/157904",
+      "visible": true,
+      "rect": {
+        "x": 1184.449951171875,
+        "y": 1248.9000244140625,
+        "width": 129.73333740234375,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-56",
+      "tag": "a",
+      "label": "MikeMirzayanov",
+      "href": "https://codeforces.com/profile/MikeMirzayanov",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1277.2333984375,
+        "width": 86.16665649414062,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-57",
+      "tag": "a",
+      "label": "Rule about third-party code is changing",
+      "href": "https://codeforces.com/blog/entry/8790",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1275.7333984375,
+        "width": 251.7833251953125,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-58",
+      "tag": "a",
+      "label": "Ahmed-Nawaz",
+      "href": "https://codeforces.com/profile/Ahmed-Nawaz",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1318.5833740234375,
+        "width": 77.51666259765625,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-59",
+      "tag": "a",
+      "label": "solution to E CF1128",
+      "href": "https://codeforces.com/blog/entry/157922",
+      "visible": true,
+      "rect": {
+        "x": 1182.25,
+        "y": 1317.0833740234375,
+        "width": 104.96665954589844,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-60",
+      "tag": "a",
+      "label": "omsincoconut",
+      "href": "https://codeforces.com/profile/omsincoconut",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1345.4166259765625,
+        "width": 77.39999389648438,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-61",
+      "tag": "a",
+      "label": "WorldQuant Round 1 (Codeforces Round 1128, Div. 1 + 2) Editorial",
+      "href": "https://codeforces.com/blog/entry/157917",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1343.9166259765625,
+        "width": 227.21665954589844,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-62",
+      "tag": "a",
+      "label": "SpyrosAliv",
+      "href": "https://codeforces.com/profile/SpyrosAliv",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1386.2666015625,
+        "width": 58.899993896484375,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-63",
+      "tag": "a",
+      "label": "WorldQuant Round 1 (Codeforces Round 1128, Div. 1 + 2)",
+      "href": "https://codeforces.com/blog/entry/157538",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1384.7666015625,
+        "width": 247.59999084472656,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-64",
+      "tag": "a",
+      "label": "WorldWarV",
+      "href": "https://codeforces.com/profile/WorldWarV",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1427.11669921875,
+        "width": 60.29998779296875,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-65",
+      "tag": "a",
+      "label": "Codeforces Round 1122 (Div. 3) Editorial",
+      "href": "https://codeforces.com/blog/entry/156984",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1425.61669921875,
+        "width": 238.71665954589844,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-66",
+      "tag": "a",
+      "label": "AmShZ",
+      "href": "https://codeforces.com/profile/AmShZ",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1467.9666748046875,
+        "width": 39.68333435058594,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-67",
+      "tag": "a",
+      "label": "Repovive Starter Round 10",
+      "href": "https://codeforces.com/blog/entry/157944",
+      "visible": true,
+      "rect": {
+        "x": 1144.4166259765625,
+        "y": 1466.4666748046875,
+        "width": 136.64999389648438,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-68",
+      "tag": "a",
+      "label": "Arbuzik342",
+      "href": "https://codeforces.com/profile/Arbuzik342",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1494.800048828125,
+        "width": 60.29998779296875,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-69",
+      "tag": "a",
+      "label": "A&DS Contest Final: Summarizing Results and Waiting for Virtual Participants",
+      "href": "https://codeforces.com/blog/entry/157943",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1493.300048828125,
+        "width": 251.04998779296875,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-70",
+      "tag": "a",
+      "label": "ZainUlHaq",
+      "href": "https://codeforces.com/profile/ZainUlHaq",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1535.6500244140625,
+        "width": 56.18333435058594,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-71",
+      "tag": "a",
+      "label": "Why we let disabled accounts in leaderboards",
+      "href": "https://codeforces.com/blog/entry/157858",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1534.1500244140625,
+        "width": 235.04998779296875,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-72",
+      "tag": "a",
+      "label": "Um_nik",
+      "href": "https://codeforces.com/profile/Um_nik",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1576.5,
+        "width": 40.94999694824219,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-73",
+      "tag": "a",
+      "label": "I am going to ignore all ban appeals in DM",
+      "href": "https://codeforces.com/blog/entry/157772",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1575,
+        "width": 250.04998779296875,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-74",
+      "tag": "a",
+      "label": "plagues",
+      "href": "https://codeforces.com/profile/plagues",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1617.3499755859375,
+        "width": 42.83332824707031,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-75",
+      "tag": "a",
+      "label": "The most outrageous cheating in the history of Huawei Challenge",
+      "href": "https://codeforces.com/blog/entry/156293",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1615.8499755859375,
+        "width": 244.3666534423828,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-76",
+      "tag": "a",
+      "label": "soum99",
+      "href": "https://codeforces.com/profile/soum99",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1658.199951171875,
+        "width": 42.81666564941406,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-77",
+      "tag": "a",
+      "label": "Two problems I face while practicing on Codeforces",
+      "href": "https://codeforces.com/blog/entry/157909",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1656.699951171875,
+        "width": 242.43333435058594,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-78",
+      "tag": "a",
+      "label": "yasaswinimadhuvarsu",
+      "href": "https://codeforces.com/profile/yasaswinimadhuvarsu",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1699.050048828125,
+        "width": 120.41665649414062,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-79",
+      "tag": "a",
+      "label": "My Codeforces account was disabled — Request for review",
+      "href": "https://codeforces.com/blog/entry/157120",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1697.550048828125,
+        "width": 220.41665649414062,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-80",
+      "tag": "a",
+      "label": "binanamakkaaalu",
+      "href": "https://codeforces.com/profile/binanamakkaaalu",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1739.9000244140625,
+        "width": 94.43333435058594,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-81",
+      "tag": "a",
+      "label": "a free extension to highlight, draw and take notes on CF problems",
+      "href": "https://codeforces.com/blog/entry/157938",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1738.4000244140625,
+        "width": 234.26666259765625,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-82",
+      "tag": "a",
+      "label": "mhkmv_1",
+      "href": "https://codeforces.com/profile/mhkmv_1",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1794.75,
+        "width": 52.06666564941406,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-83",
+      "tag": "a",
+      "label": "Submissions stuck \"In queue\" for hours",
+      "href": "https://codeforces.com/blog/entry/157918",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1793.25,
+        "width": 235.16665649414062,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-84",
+      "tag": "a",
+      "label": "BledDest",
+      "href": "https://codeforces.com/profile/BledDest",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1835.5999755859375,
+        "width": 49.25,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-85",
+      "tag": "a",
+      "label": "Educational Codeforces Round 195 — Editorial",
+      "href": "https://codeforces.com/blog/entry/157752",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1834.0999755859375,
+        "width": 245.75,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-86",
+      "tag": "a",
+      "label": "JonKhan",
+      "href": "https://codeforces.com/profile/JonKhan",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1876.449951171875,
+        "width": 48.44999694824219,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-87",
+      "tag": "a",
+      "label": "Justice for Bob",
+      "href": "https://codeforces.com/blog/entry/157657",
+      "visible": true,
+      "rect": {
+        "x": 1153.183349609375,
+        "y": 1874.949951171875,
+        "width": 74.93333435058594,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-88",
+      "tag": "a",
+      "label": "jayashsingh619",
+      "href": "https://codeforces.com/profile/jayashsingh619",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1903.2833251953125,
+        "width": 83.83332824707031,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-89",
+      "tag": "a",
+      "label": "submission in queue for unusually long time",
+      "href": "https://codeforces.com/blog/entry/157913",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1901.7833251953125,
+        "width": 221.1166534423828,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-90",
+      "tag": "a",
+      "label": "Arbuzik342",
+      "href": "https://codeforces.com/profile/Arbuzik342",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1944.13330078125,
+        "width": 60.29998779296875,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-91",
+      "tag": "a",
+      "label": "Final Round Announcement: Path to Mastery (A&DS-1 and A&DS-2)",
+      "href": "https://codeforces.com/blog/entry/157933",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1942.63330078125,
+        "width": 247.96665954589844,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-92",
+      "tag": "a",
+      "label": "2-qiym",
+      "href": "https://codeforces.com/profile/2-qiym",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1984.9833984375,
+        "width": 36.51666259765625,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-93",
+      "tag": "a",
+      "label": "CCA Programming Competition 2026 ($10k+ in prizes)",
+      "href": "https://codeforces.com/blog/entry/157611",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 1983.4833984375,
+        "width": 241.13333129882812,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-94",
+      "tag": "a",
+      "label": "Kevin114514",
+      "href": "https://codeforces.com/profile/Kevin114514",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 2025.8333740234375,
+        "width": 68.09999084472656,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-95",
+      "tag": "a",
+      "label": "IOI 2025 China National Team",
+      "href": "https://codeforces.com/blog/entry/138712",
+      "visible": true,
+      "rect": {
+        "x": 1172.8333740234375,
+        "y": 2024.3333740234375,
+        "width": 151.78334045410156,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-96",
+      "tag": "a",
+      "label": "TheWorse",
+      "href": "https://codeforces.com/profile/TheWorse",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 2067.183349609375,
+        "width": 54.383331298828125,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-97",
+      "tag": "a",
+      "label": "How can you create games by C++?",
+      "href": "https://codeforces.com/blog/entry/155562",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 2065.683349609375,
+        "width": 242.3666534423828,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-98",
+      "tag": "a",
+      "label": "zhengru_ioi_team",
+      "href": "https://codeforces.com/profile/zhengru_ioi_team",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 2108.033447265625,
+        "width": 96.25,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-99",
+      "tag": "a",
+      "label": "What is the matter with CodeForces?",
+      "href": "https://codeforces.com/blog/entry/157919",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 2106.533447265625,
+        "width": 229.1166534423828,
+        "height": 29.5
+      }
+    },
+    {
+      "id": "el-100",
+      "tag": "a",
+      "label": "A_N_O_T_H_E_R",
+      "href": "https://codeforces.com/profile/A_N_O_T_H_E_R",
+      "visible": true,
+      "rect": {
+        "x": 1087.0999755859375,
+        "y": 2148.88330078125,
+        "width": 93.83332824707031,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-101",
+      "tag": "a",
+      "label": "Contest frequency",
+      "href": "https://codeforces.com/blog/entry/157934",
+      "visible": true,
+      "rect": {
+        "x": 1198.566650390625,
+        "y": 2147.38330078125,
+        "width": 91.94999694824219,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-102",
+      "tag": "a",
+      "label": "Detailed →",
+      "href": "https://codeforces.com/recent-actions",
+      "visible": true,
+      "rect": {
+        "x": 1292.0333251953125,
+        "y": 2187.10009765625,
+        "width": 54.416656494140625,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-103",
+      "tag": "a",
+      "label": "WorldQuant Round 1 (Codeforces Round 1128, Div. 1 + 2)",
+      "href": "https://codeforces.com/blog/entry/157538",
+      "visible": true,
+      "rect": {
+        "x": 181.5,
+        "y": 171.5,
+        "width": 878,
+        "height": 28
+      }
+    },
+    {
+      "id": "el-104",
+      "tag": "a",
+      "label": "SpyrosAliv",
+      "href": "https://codeforces.com/profile/SpyrosAliv",
+      "visible": true,
+      "rect": {
+        "x": 201.71665954589844,
+        "y": 211.5,
+        "width": 72.73333740234375,
+        "height": 17
+      }
+    },
+    {
+      "id": "el-105",
+      "tag": "a",
+      "label": "omsincoconut",
+      "href": "https://codeforces.com/profile/omsincoconut",
+      "visible": true,
+      "rect": {
+        "x": 640.11669921875,
+        "y": 342.6000061035156,
+        "width": 95.66667175292969,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-106",
+      "tag": "a",
+      "label": "chromate00",
+      "href": "https://codeforces.com/profile/chromate00",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 362.20001220703125,
+        "width": 78.43333435058594,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-107",
+      "tag": "a",
+      "label": "ttamx",
+      "href": "https://codeforces.com/profile/ttamx",
+      "visible": true,
+      "rect": {
+        "x": 283.73333740234375,
+        "y": 362.20001220703125,
+        "width": 37.59999084472656,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-108",
+      "tag": "a",
+      "label": "yse",
+      "href": "https://codeforces.com/profile/yse",
+      "visible": true,
+      "rect": {
+        "x": 329.1333312988281,
+        "y": 362.20001220703125,
+        "width": 23.100006103515625,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-109",
+      "tag": "a",
+      "label": "Marszpace",
+      "href": "https://codeforces.com/profile/Marszpace",
+      "visible": true,
+      "rect": {
+        "x": 360.0333251953125,
+        "y": 362.20001220703125,
+        "width": 71.7833251953125,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-110",
+      "tag": "a",
+      "label": "SpyrosAliv",
+      "href": "https://codeforces.com/profile/SpyrosAliv",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 381.79998779296875,
+        "width": 72.73333740234375,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-111",
+      "tag": "a",
+      "label": "WorldQuant Round 1 (Codeforces Round 1128, Div. 1 + Div. 2)",
+      "href": "https://codeforces.com/contest/2261",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 403.70001220703125,
+        "width": 389.0333251953125,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-112",
+      "tag": "a",
+      "label": "Saturday, October 17, 2026 at 20:05UTC+5.5",
+      "href": "https://www.timeanddate.com/worldclock/fixedtime.html?day=17&month=10&year=2026&hour=17&min=35&sec=0&p1=166",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 423.29998779296875,
+        "width": 528.0499877929688,
+        "height": 34.59999084472656
+      }
+    },
+    {
+      "id": "el-113",
+      "tag": "a",
+      "label": "guide for communication problems",
+      "href": "https://codeforces.com/blog/entry/147996",
+      "visible": true,
+      "rect": {
+        "x": 777.0999755859375,
+        "y": 642.7000122070312,
+        "width": 213.7333221435547,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-114",
+      "tag": "a",
+      "label": "flamestorm",
+      "href": "https://codeforces.com/profile/flamestorm",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 729.2000122070312,
+        "width": 75.33334350585938,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-115",
+      "tag": "a",
+      "label": "simplelife",
+      "href": "https://codeforces.com/profile/simplelife",
+      "visible": true,
+      "rect": {
+        "x": 305.83331298828125,
+        "y": 729.2000122070312,
+        "width": 64.60000610351562,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-116",
+      "tag": "a",
+      "label": "ItzsleepyXD",
+      "href": "https://codeforces.com/profile/ItzsleepyXD",
+      "visible": true,
+      "rect": {
+        "x": 378.23333740234375,
+        "y": 729.2000122070312,
+        "width": 78.43333435058594,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-117",
+      "tag": "a",
+      "label": "Um_nik",
+      "href": "https://codeforces.com/profile/Um_nik",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 752.2000122070312,
+        "width": 50.600006103515625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-118",
+      "tag": "a",
+      "label": "Proof_by_QED",
+      "href": "https://codeforces.com/profile/Proof_by_QED",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 775.2000122070312,
+        "width": 98.48333740234375,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-119",
+      "tag": "a",
+      "label": "EvenImage",
+      "href": "https://codeforces.com/profile/EvenImage",
+      "visible": true,
+      "rect": {
+        "x": 299.91668701171875,
+        "y": 798.2000122070312,
+        "width": 73.23332214355469,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-120",
+      "tag": "a",
+      "label": "nifeshe",
+      "href": "https://codeforces.com/profile/nifeshe",
+      "visible": true,
+      "rect": {
+        "x": 380.95001220703125,
+        "y": 798.2000122070312,
+        "width": 49.01666259765625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-121",
+      "tag": "a",
+      "label": "A_G",
+      "href": "https://codeforces.com/profile/A_G",
+      "visible": true,
+      "rect": {
+        "x": 437.76666259765625,
+        "y": 798.2000122070312,
+        "width": 28.783340454101562,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-122",
+      "tag": "a",
+      "label": "__baozii__",
+      "href": "https://codeforces.com/profile/__baozii__",
+      "visible": true,
+      "rect": {
+        "x": 474.3500061035156,
+        "y": 798.2000122070312,
+        "width": 70.63333129882812,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-123",
+      "tag": "a",
+      "label": "Error_Yuan",
+      "href": "https://codeforces.com/profile/Error_Yuan",
+      "visible": true,
+      "rect": {
+        "x": 552.7833251953125,
+        "y": 798.2000122070312,
+        "width": 75.5,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-124",
+      "tag": "a",
+      "label": "turska",
+      "href": "https://codeforces.com/profile/turska",
+      "visible": true,
+      "rect": {
+        "x": 636.0833129882812,
+        "y": 798.2000122070312,
+        "width": 41.98333740234375,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-125",
+      "tag": "a",
+      "label": "Stathis",
+      "href": "https://codeforces.com/profile/Stathis",
+      "visible": true,
+      "rect": {
+        "x": 685.86669921875,
+        "y": 798.2000122070312,
+        "width": 46.68333435058594,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-126",
+      "tag": "a",
+      "label": "Mentholzzz",
+      "href": "https://codeforces.com/profile/Mentholzzz",
+      "visible": true,
+      "rect": {
+        "x": 740.3499755859375,
+        "y": 798.2000122070312,
+        "width": 74.5333251953125,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-127",
+      "tag": "a",
+      "label": "cry",
+      "href": "https://codeforces.com/profile/cry",
+      "visible": true,
+      "rect": {
+        "x": 822.683349609375,
+        "y": 798.2000122070312,
+        "width": 21.316665649414062,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-128",
+      "tag": "a",
+      "label": "Timosh",
+      "href": "https://codeforces.com/profile/Timosh",
+      "visible": true,
+      "rect": {
+        "x": 851.7999877929688,
+        "y": 798.2000122070312,
+        "width": 49.76666259765625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-129",
+      "tag": "a",
+      "label": "coder3000",
+      "href": "https://codeforces.com/profile/coder3000",
+      "visible": true,
+      "rect": {
+        "x": 909.36669921875,
+        "y": 798.2000122070312,
+        "width": 69.25,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-130",
+      "tag": "a",
+      "label": "ReverseFlash081",
+      "href": "https://codeforces.com/profile/ReverseFlash081",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 819.2000122070312,
+        "width": 113.78334045410156,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-131",
+      "tag": "a",
+      "label": "Argentum47",
+      "href": "https://codeforces.com/profile/Argentum47",
+      "visible": true,
+      "rect": {
+        "x": 344.2833251953125,
+        "y": 819.2000122070312,
+        "width": 81.61665344238281,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-132",
+      "tag": "a",
+      "label": "Hori",
+      "href": "https://codeforces.com/profile/Hori",
+      "visible": true,
+      "rect": {
+        "x": 433.70001220703125,
+        "y": 819.2000122070312,
+        "width": 27.933334350585938,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-133",
+      "tag": "a",
+      "label": "wakanda-forever",
+      "href": "https://codeforces.com/profile/wakanda-forever",
+      "visible": true,
+      "rect": {
+        "x": 469.433349609375,
+        "y": 819.2000122070312,
+        "width": 110.60000610351562,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-134",
+      "tag": "a",
+      "label": "Lxnsr._th",
+      "href": "https://codeforces.com/profile/Lxnsr._th",
+      "visible": true,
+      "rect": {
+        "x": 587.8333129882812,
+        "y": 819.2000122070312,
+        "width": 62.133331298828125,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-135",
+      "tag": "a",
+      "label": "coder3000",
+      "href": "https://codeforces.com/profile/coder3000",
+      "visible": true,
+      "rect": {
+        "x": 657.7666625976562,
+        "y": 819.2000122070312,
+        "width": 69.25,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-136",
+      "tag": "a",
+      "label": "cowthecow",
+      "href": "https://codeforces.com/profile/cowthecow",
+      "visible": true,
+      "rect": {
+        "x": 734.816650390625,
+        "y": 819.2000122070312,
+        "width": 75.39999389648438,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-137",
+      "tag": "a",
+      "label": "Borhom",
+      "href": "https://codeforces.com/profile/Borhom",
+      "visible": true,
+      "rect": {
+        "x": 818.0166625976562,
+        "y": 819.2000122070312,
+        "width": 53.583343505859375,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-138",
+      "tag": "a",
+      "label": "blackslex",
+      "href": "https://codeforces.com/profile/blackslex",
+      "visible": true,
+      "rect": {
+        "x": 879.4000244140625,
+        "y": 819.2000122070312,
+        "width": 62.600006103515625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-139",
+      "tag": "a",
+      "label": "samsoom",
+      "href": "https://codeforces.com/profile/samsoom",
+      "visible": true,
+      "rect": {
+        "x": 945.9000244140625,
+        "y": 819.2000122070312,
+        "width": 65.41667175292969,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-140",
+      "tag": "a",
+      "label": "nik_exists",
+      "href": "https://codeforces.com/profile/nik_exists",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 840.2000122070312,
+        "width": 67.40000915527344,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-141",
+      "tag": "a",
+      "label": "Nasa",
+      "href": "https://codeforces.com/profile/Nasa",
+      "visible": true,
+      "rect": {
+        "x": 297.8999938964844,
+        "y": 840.2000122070312,
+        "width": 33.63334655761719,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-142",
+      "tag": "a",
+      "label": "Mysticmage45",
+      "href": "https://codeforces.com/profile/Mysticmage45",
+      "visible": true,
+      "rect": {
+        "x": 339.33331298828125,
+        "y": 840.2000122070312,
+        "width": 95.45001220703125,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-143",
+      "tag": "a",
+      "label": "SkyMagic",
+      "href": "https://codeforces.com/profile/SkyMagic",
+      "visible": true,
+      "rect": {
+        "x": 442.58331298828125,
+        "y": 840.2000122070312,
+        "width": 64.83334350585938,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-144",
+      "tag": "a",
+      "label": "Teto",
+      "href": "https://codeforces.com/profile/Teto",
+      "visible": true,
+      "rect": {
+        "x": 515.2166748046875,
+        "y": 840.2000122070312,
+        "width": 28.350006103515625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-145",
+      "tag": "a",
+      "label": "coder3000",
+      "href": "https://codeforces.com/profile/coder3000",
+      "visible": true,
+      "rect": {
+        "x": 551.36669921875,
+        "y": 840.2000122070312,
+        "width": 69.25,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-146",
+      "tag": "a",
+      "label": "Alexdat2000",
+      "href": "https://codeforces.com/profile/Alexdat2000",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 863.2000122070312,
+        "width": 81.40000915527344,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-147",
+      "tag": "a",
+      "label": "MikeMirzayanov",
+      "href": "https://codeforces.com/profile/MikeMirzayanov",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 886.2000122070312,
+        "width": 106.51666259765625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-148",
+      "tag": "a",
+      "label": "KAN",
+      "href": "https://codeforces.com/profile/KAN",
+      "visible": true,
+      "rect": {
+        "x": 360.3666687011719,
+        "y": 886.2000122070312,
+        "width": 30.583328247070312,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-149",
+      "tag": "a",
+      "label": "You",
+      "href": "https://codeforces.com/profile",
+      "visible": true,
+      "rect": {
+        "x": 359.16668701171875,
+        "y": 912.2000122070312,
+        "width": 25.449996948242188,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-150",
+      "tag": "a",
+      "label": "turmax",
+      "href": "https://codeforces.com/profile/turmax",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1039.4000244140625,
+        "width": 46.81666564941406,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-151",
+      "tag": "a",
+      "label": "k1r1t0",
+      "href": "https://codeforces.com/profile/k1r1t0",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1059,
+        "width": 41.25,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-152",
+      "tag": "a",
+      "label": "jiangly",
+      "href": "https://codeforces.com/profile/jiangly",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1078.5999755859375,
+        "width": 44.19999694824219,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-153",
+      "tag": "a",
+      "label": "tourist",
+      "href": "https://codeforces.com/profile/tourist",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1098.199951171875,
+        "width": 43.333343505859375,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-154",
+      "tag": "a",
+      "label": "strapple",
+      "href": "https://codeforces.com/profile/strapple",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1117.800048828125,
+        "width": 54.51666259765625,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-155",
+      "tag": "a",
+      "label": "idontwannadothisanymore",
+      "href": "https://codeforces.com/profile/idontwannadothisanymore",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1137.4000244140625,
+        "width": 177.9499969482422,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-156",
+      "tag": "a",
+      "label": "ecnerwala",
+      "href": "https://codeforces.com/profile/ecnerwala",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1157,
+        "width": 67.94999694824219,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-157",
+      "tag": "a",
+      "label": "potato167",
+      "href": "https://codeforces.com/profile/potato167",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1176.5999755859375,
+        "width": 65.90000915527344,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-158",
+      "tag": "a",
+      "label": "littleju",
+      "href": "https://codeforces.com/profile/littleju",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1196.199951171875,
+        "width": 41.41667175292969,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-159",
+      "tag": "a",
+      "label": "no-girlfriend",
+      "href": "https://codeforces.com/profile/no-girlfriend",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1215.800048828125,
+        "width": 82.65000915527344,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-160",
+      "tag": "a",
+      "label": "Editorial",
+      "href": "https://codeforces.com/blog/entry/157917",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 1254.4000244140625,
+        "width": 87.69999694824219,
+        "height": 25
+      }
+    },
+    {
+      "id": "el-161",
+      "tag": "a",
+      "label": "the WorldQuant Round 1",
+      "href": "https://codeforces.com/contest/2261",
+      "visible": true,
+      "rect": {
+        "x": 403.75,
+        "y": 1381.9000244140625,
+        "width": 154.39999389648438,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-162",
+      "tag": "a",
+      "label": "WorldQuant",
+      "href": "https://www.worldquant.com/",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 1442.0999755859375,
+        "width": 79.76666259765625,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-163",
+      "tag": "a",
+      "label": "Quantitative Researcher",
+      "href": "https://assets.codeforces.com/files/worldquant/quantitative-researcher/",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1709.4000244140625,
+        "width": 161,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-164",
+      "tag": "a",
+      "label": "Senior Python Engineer",
+      "href": "https://assets.codeforces.com/files/worldquant/senior-python-engineer/",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1732.4000244140625,
+        "width": 159,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-165",
+      "tag": "a",
+      "label": "AI Software Developer",
+      "href": "https://assets.codeforces.com/files/worldquant/ai-software-developer/",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 1755.4000244140625,
+        "width": 148.83334350585938,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-166",
+      "tag": "a",
+      "label": "Apply",
+      "href": "https://codeforces.com/userForm/c3caf05ac7284563",
+      "visible": true,
+      "rect": {
+        "x": 585.5166625976562,
+        "y": 1876.5999755859375,
+        "width": 85.94999694824219,
+        "height": 37
+      }
+    },
+    {
+      "id": "el-167",
+      "tag": "a",
+      "label": "Full text and comments »",
+      "href": "https://codeforces.com/blog/entry/157538",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 2207.800048828125,
+        "width": 134,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-168",
+      "tag": "a",
+      "label": "WorldQuant Round 1 (Codeforces Round 1128, Div. 1 + Div. 2)",
+      "href": "https://codeforces.com/contest/2261",
+      "visible": true,
+      "rect": {
+        "x": 293.6499938964844,
+        "y": 2237.699951171875,
+        "width": 305.13336181640625,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-169",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 193.9499969482422,
+        "y": 2285.316650390625,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-170",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 257.9666748046875,
+        "y": 2285.316650390625,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-171",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/profile/SpyrosAliv",
+      "visible": true,
+      "rect": {
+        "x": 791.4500122070312,
+        "y": 2282.75,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-172",
+      "tag": "a",
+      "label": "SpyrosAliv",
+      "href": "https://codeforces.com/profile/SpyrosAliv",
+      "visible": true,
+      "rect": {
+        "x": 810.9500122070312,
+        "y": 2282.75,
+        "width": 59.5,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-173",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/blog/entry/157538#comments",
+      "visible": true,
+      "rect": {
+        "x": 998.5499877929688,
+        "y": 2282.75,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-174",
+      "tag": "a",
+      "label": "160",
+      "href": "https://codeforces.com/blog/entry/157538#comments",
+      "visible": true,
+      "rect": {
+        "x": 1018.0499877929688,
+        "y": 2282.75,
+        "width": 21,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-175",
+      "tag": "a",
+      "label": "Meet WorldQuant",
+      "href": "https://codeforces.com/blog/entry/157547",
+      "visible": true,
+      "rect": {
+        "x": 181.5,
+        "y": 2337.300048828125,
+        "width": 878,
+        "height": 28
+      }
+    },
+    {
+      "id": "el-176",
+      "tag": "a",
+      "label": "WorldQuant",
+      "href": "https://codeforces.com/profile/WorldQuant",
+      "visible": true,
+      "rect": {
+        "x": 201.71665954589844,
+        "y": 2377.300048828125,
+        "width": 74.41667175292969,
+        "height": 17
+      }
+    },
+    {
+      "id": "el-177",
+      "tag": "a",
+      "label": "history",
+      "href": "https://codeforces.com/topic/158191/en4",
+      "visible": true,
+      "rect": {
+        "x": 283.8999938964844,
+        "y": 2376.300048828125,
+        "width": 40.20001220703125,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-178",
+      "tag": "a",
+      "label": "the WorldQuant Round 1",
+      "href": "https://codeforces.com/contest/2261",
+      "visible": true,
+      "rect": {
+        "x": 403.75,
+        "y": 2480.60009765625,
+        "width": 154.39999389648438,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-179",
+      "tag": "a",
+      "label": "WorldQuant",
+      "href": "https://www.worldquant.com/",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 2599.60009765625,
+        "width": 79.76666259765625,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-180",
+      "tag": "a",
+      "label": "Quantitative Researcher",
+      "href": "https://assets.codeforces.com/files/worldquant/quantitative-researcher/",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 3390.63330078125,
+        "width": 161,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-181",
+      "tag": "a",
+      "label": "Senior Python Engineer",
+      "href": "https://assets.codeforces.com/files/worldquant/senior-python-engineer/",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 3413.63330078125,
+        "width": 159,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-182",
+      "tag": "a",
+      "label": "AI Software Developer",
+      "href": "https://assets.codeforces.com/files/worldquant/ai-software-developer/",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 3436.63330078125,
+        "width": 148.83334350585938,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-183",
+      "tag": "a",
+      "label": "Apply",
+      "href": "https://codeforces.com/userForm/c3caf05ac7284563",
+      "visible": true,
+      "rect": {
+        "x": 585.5166625976562,
+        "y": 3517.2333984375,
+        "width": 85.94999694824219,
+        "height": 37
+      }
+    },
+    {
+      "id": "el-184",
+      "tag": "a",
+      "label": "Saturday, October 17, 2026 at 20:05UTC+5.5",
+      "href": "https://www.timeanddate.com/worldclock/fixedtime.html?day=17&month=10&year=2026&hour=17&min=35&sec=0&p1=166",
+      "visible": true,
+      "rect": {
+        "x": 442.5,
+        "y": 3618.13330078125,
+        "width": 269.066650390625,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-185",
+      "tag": "a",
+      "label": "Vasilii.Mironov@worldquant.com",
+      "href": "mailto:Vasilii.Mironov@worldquant.com",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 3731.333251953125,
+        "width": 201.8333282470703,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-186",
+      "tag": "a",
+      "label": "Full text and comments »",
+      "href": "https://codeforces.com/blog/entry/157547",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 3804.2333984375,
+        "width": 134,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-187",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 193.9499969482422,
+        "y": 3848.25,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-188",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 257.9666748046875,
+        "y": 3848.25,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-189",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/profile/WorldQuant",
+      "visible": true,
+      "rect": {
+        "x": 790.9833374023438,
+        "y": 3845.683349609375,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-190",
+      "tag": "a",
+      "label": "WorldQuant",
+      "href": "https://codeforces.com/profile/WorldQuant",
+      "visible": true,
+      "rect": {
+        "x": 810.4833374023438,
+        "y": 3845.683349609375,
+        "width": 66.96665954589844,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-191",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/blog/entry/157547#comments",
+      "visible": true,
+      "rect": {
+        "x": 1005.5499877929688,
+        "y": 3845.683349609375,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-192",
+      "tag": "a",
+      "label": "14",
+      "href": "https://codeforces.com/blog/entry/157547#comments",
+      "visible": true,
+      "rect": {
+        "x": 1025.050048828125,
+        "y": 3845.683349609375,
+        "width": 14,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-193",
+      "tag": "a",
+      "label": "Proposing a Div. 3/4 Round",
+      "href": "https://codeforces.com/blog/entry/157724",
+      "visible": true,
+      "rect": {
+        "x": 181.5,
+        "y": 3900.2333984375,
+        "width": 878,
+        "height": 28
+      }
+    },
+    {
+      "id": "el-194",
+      "tag": "a",
+      "label": "cry",
+      "href": "https://codeforces.com/profile/cry",
+      "visible": true,
+      "rect": {
+        "x": 201.71665954589844,
+        "y": 3940.2333984375,
+        "width": 21.316680908203125,
+        "height": 17
+      }
+    },
+    {
+      "id": "el-195",
+      "tag": "a",
+      "label": "history",
+      "href": "https://codeforces.com/topic/158368/en2",
+      "visible": true,
+      "rect": {
+        "x": 230.8000030517578,
+        "y": 3939.2333984375,
+        "width": 40.19999694824219,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-196",
+      "tag": "a",
+      "label": "relevant comment",
+      "href": "https://codeforces.com/blog/entry/157886?#comment-1400103",
+      "visible": true,
+      "rect": {
+        "x": 228.64999389648438,
+        "y": 4100.93310546875,
+        "width": 110.75,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-197",
+      "tag": "a",
+      "label": "Full text and comments »",
+      "href": "https://codeforces.com/blog/entry/157724",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 4133.2333984375,
+        "width": 134,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-198",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 193.9499969482422,
+        "y": 4177.25,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-199",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 257.9666748046875,
+        "y": 4177.25,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-200",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/profile/cry",
+      "visible": true,
+      "rect": {
+        "x": 848.1500244140625,
+        "y": 4174.68310546875,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-201",
+      "tag": "a",
+      "label": "cry",
+      "href": "https://codeforces.com/profile/cry",
+      "visible": true,
+      "rect": {
+        "x": 867.6500244140625,
+        "y": 4174.68310546875,
+        "width": 16.800003051757812,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-202",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/blog/entry/157724#comments",
+      "visible": true,
+      "rect": {
+        "x": 1005.5499877929688,
+        "y": 4174.68310546875,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-203",
+      "tag": "a",
+      "label": "69",
+      "href": "https://codeforces.com/blog/entry/157724#comments",
+      "visible": true,
+      "rect": {
+        "x": 1025.050048828125,
+        "y": 4174.68310546875,
+        "width": 14,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-204",
+      "tag": "a",
+      "label": "Educational Codeforces Round 195 [rated for Div. 2]",
+      "href": "https://codeforces.com/blog/entry/157674",
+      "visible": true,
+      "rect": {
+        "x": 181.5,
+        "y": 4229.2333984375,
+        "width": 878,
+        "height": 28
+      }
+    },
+    {
+      "id": "el-205",
+      "tag": "a",
+      "label": "BledDest",
+      "href": "https://codeforces.com/profile/BledDest",
+      "visible": true,
+      "rect": {
+        "x": 201.71665954589844,
+        "y": 4269.2333984375,
+        "width": 60.866668701171875,
+        "height": 17
+      }
+    },
+    {
+      "id": "el-206",
+      "tag": "a",
+      "label": "Neapolis University Pafos",
+      "href": "https://www.nup.ac.cy/",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 4371.13330078125,
+        "width": 505.01666259765625,
+        "height": 34.600006103515625
+      }
+    },
+    {
+      "id": "el-207",
+      "tag": "a",
+      "label": "Educational Codeforces Round 195 (Rated for Div. 2)",
+      "href": "https://codeforces.com/contest/2276",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 4431.33349609375,
+        "width": 329,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-208",
+      "tag": "a",
+      "label": "Wednesday, October 14, 2026 at 20:05UTC+5.5",
+      "href": "https://www.timeanddate.com/worldclock/fixedtime.html?day=14&month=10&year=2026&hour=17&min=35&sec=0&p1=166",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 4431.33349609375,
+        "width": 560.0499877929688,
+        "height": 34.600006103515625
+      }
+    },
+    {
+      "id": "el-209",
+      "tag": "a",
+      "label": "fcspartakm",
+      "href": "https://codeforces.com/profile/fcspartakm",
+      "visible": true,
+      "rect": {
+        "x": 398.83331298828125,
+        "y": 4669.83349609375,
+        "width": 75.03334045410156,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-210",
+      "tag": "a",
+      "label": "Roms",
+      "href": "https://codeforces.com/profile/Roms",
+      "visible": true,
+      "rect": {
+        "x": 481.66668701171875,
+        "y": 4669.83349609375,
+        "width": 38.79998779296875,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-211",
+      "tag": "a",
+      "label": "MikeMirzayanov",
+      "href": "https://codeforces.com/profile/MikeMirzayanov",
+      "visible": true,
+      "rect": {
+        "x": 466.683349609375,
+        "y": 4710.43310546875,
+        "width": 106.51666259765625,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-212",
+      "tag": "a",
+      "label": "awoo",
+      "href": "https://codeforces.com/profile/awoo",
+      "visible": true,
+      "rect": {
+        "x": 929.86669921875,
+        "y": 4730.033203125,
+        "width": 35.48333740234375,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-213",
+      "tag": "a",
+      "label": "FelixArg",
+      "href": "https://codeforces.com/profile/FelixArg",
+      "visible": true,
+      "rect": {
+        "x": 973.1500244140625,
+        "y": 4730.033203125,
+        "width": 55.88334655761719,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-214",
+      "tag": "a",
+      "label": "Computer Science and Artificial Intelligence (CSAI)",
+      "href": "https://lp.jetbrains.com/academy/csai-program/",
+      "visible": true,
+      "rect": {
+        "x": 351.6166687011719,
+        "y": 4814.533203125,
+        "width": 315.3499755859375,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-215",
+      "tag": "a",
+      "label": "AI Club",
+      "href": "https://lp.jetbrains.com/youth-ai-club/",
+      "visible": true,
+      "rect": {
+        "x": 218.39999389648438,
+        "y": 4936.33349609375,
+        "width": 45.600006103515625,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-216",
+      "tag": "a",
+      "label": "Math Club",
+      "href": "https://lp.jetbrains.com/academy/youth-clubs/math/",
+      "visible": true,
+      "rect": {
+        "x": 218.39999389648438,
+        "y": 4996.533203125,
+        "width": 63.25,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-217",
+      "tag": "a",
+      "label": "Coding Club",
+      "href": "https://lp.jetbrains.com/youth-coding-club/",
+      "visible": true,
+      "rect": {
+        "x": 218.39999389648438,
+        "y": 5056.7333984375,
+        "width": 76.68333435058594,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-218",
+      "tag": "a",
+      "label": "Join",
+      "href": "https://lp.jetbrains.com/academy/csai/how-to-prepare/#youth-clubs",
+      "visible": true,
+      "rect": {
+        "x": 218.39999389648438,
+        "y": 5177.13330078125,
+        "width": 28.783340454101562,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-219",
+      "tag": "a",
+      "label": "Full text and comments »",
+      "href": "https://codeforces.com/blog/entry/157674",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 5250.033203125,
+        "width": 134,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-220",
+      "tag": "a",
+      "label": "Educational Codeforces Round 195 (Rated for Div. 2)",
+      "href": "https://codeforces.com/contest/2276",
+      "visible": true,
+      "rect": {
+        "x": 293.6499938964844,
+        "y": 5279.93310546875,
+        "width": 259.6166687011719,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-221",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 193.9499969482422,
+        "y": 5327.5498046875,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-222",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 257.9666748046875,
+        "y": 5327.5498046875,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-223",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/profile/BledDest",
+      "visible": true,
+      "rect": {
+        "x": 813.8499755859375,
+        "y": 5324.9833984375,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-224",
+      "tag": "a",
+      "label": "BledDest",
+      "href": "https://codeforces.com/profile/BledDest",
+      "visible": true,
+      "rect": {
+        "x": 833.3499755859375,
+        "y": 5324.9833984375,
+        "width": 51.09999084472656,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-225",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/blog/entry/157674#comments",
+      "visible": true,
+      "rect": {
+        "x": 1005.5499877929688,
+        "y": 5324.9833984375,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-226",
+      "tag": "a",
+      "label": "67",
+      "href": "https://codeforces.com/blog/entry/157674#comments",
+      "visible": true,
+      "rect": {
+        "x": 1025.050048828125,
+        "y": 5324.9833984375,
+        "width": 14,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-227",
+      "tag": "a",
+      "label": "Codeforces Round 1127 (Div. 1, Div. 2, Based on Mexican Olympiad in Informatics 2026)",
+      "href": "https://codeforces.com/blog/entry/157501",
+      "visible": true,
+      "rect": {
+        "x": 181.5,
+        "y": 5379.533203125,
+        "width": 878,
+        "height": 56
+      }
+    },
+    {
+      "id": "el-228",
+      "tag": "a",
+      "label": "efishel",
+      "href": "https://codeforces.com/profile/efishel",
+      "visible": true,
+      "rect": {
+        "x": 201.71665954589844,
+        "y": 5447.533203125,
+        "width": 44.366668701171875,
+        "height": 17
+      }
+    },
+    {
+      "id": "el-229",
+      "tag": "a",
+      "label": "Codeforces Round 1127",
+      "href": "https://codeforces.com/contests/2273,2274",
+      "visible": true,
+      "rect": {
+        "x": 413.1000061035156,
+        "y": 5562.83349609375,
+        "width": 151.31666564941406,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-230",
+      "tag": "a",
+      "label": "(Div. 1,",
+      "href": "https://codeforces.com/contest/2273",
+      "visible": true,
+      "rect": {
+        "x": 568.316650390625,
+        "y": 5562.83349609375,
+        "width": 43.350006103515625,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-231",
+      "tag": "a",
+      "label": "Div. 2)",
+      "href": "https://codeforces.com/contest/2274",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 5582.43310546875,
+        "width": 39.44999694824219,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-232",
+      "tag": "a",
+      "label": "Monday, October 12, 2026 at 00:05UTC+5.5",
+      "href": "https://www.timeanddate.com/worldclock/fixedtime.html?day=11&month=10&year=2026&hour=21&min=35&sec=0&p1=166",
+      "visible": true,
+      "rect": {
+        "x": 358.6166687011719,
+        "y": 5582.43310546875,
+        "width": 263.16668701171875,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-233",
+      "tag": "a",
+      "label": "the guide on interactive problems",
+      "href": "https://codeforces.com/blog/entry/45307",
+      "visible": true,
+      "rect": {
+        "x": 325.6166687011719,
+        "y": 5662.83349609375,
+        "width": 205.51666259765625,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-234",
+      "tag": "a",
+      "label": "jampm",
+      "href": "https://codeforces.com/profile/jampm",
+      "visible": true,
+      "rect": {
+        "x": 295.16668701171875,
+        "y": 5801.93310546875,
+        "width": 45.149993896484375,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-235",
+      "tag": "a",
+      "label": "Francisco_Martin",
+      "href": "https://codeforces.com/profile/Francisco_Martin",
+      "visible": true,
+      "rect": {
+        "x": 348.1166687011719,
+        "y": 5801.93310546875,
+        "width": 115.88333129882812,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-236",
+      "tag": "a",
+      "label": "Teto",
+      "href": "https://codeforces.com/profile/Teto",
+      "visible": true,
+      "rect": {
+        "x": 471.79998779296875,
+        "y": 5801.93310546875,
+        "width": 28.349990844726562,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-237",
+      "tag": "a",
+      "label": "SopaconK",
+      "href": "https://codeforces.com/profile/SopaconK",
+      "visible": true,
+      "rect": {
+        "x": 507.95001220703125,
+        "y": 5801.93310546875,
+        "width": 69.25,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-238",
+      "tag": "a",
+      "label": "Remgagagali727",
+      "href": "https://codeforces.com/profile/Remgagagali727",
+      "visible": true,
+      "rect": {
+        "x": 585,
+        "y": 5801.93310546875,
+        "width": 110.33332824707031,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-239",
+      "tag": "a",
+      "label": "Marckess",
+      "href": "https://codeforces.com/profile/Marckess",
+      "visible": true,
+      "rect": {
+        "x": 703.13330078125,
+        "y": 5801.93310546875,
+        "width": 63.7166748046875,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-240",
+      "tag": "a",
+      "label": "efishel",
+      "href": "https://codeforces.com/profile/efishel",
+      "visible": true,
+      "rect": {
+        "x": 801.9000244140625,
+        "y": 5801.93310546875,
+        "width": 44.366668701171875,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-241",
+      "tag": "a",
+      "label": "cry",
+      "href": "https://codeforces.com/profile/cry",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 5902.7333984375,
+        "width": 25.616668701171875,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-242",
+      "tag": "a",
+      "label": "SpyrosAliv",
+      "href": "https://codeforces.com/profile/SpyrosAliv",
+      "visible": true,
+      "rect": {
+        "x": 690.1500244140625,
+        "y": 5943.83349609375,
+        "width": 72.73333740234375,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-243",
+      "tag": "a",
+      "label": "AksLolCoding",
+      "href": "https://codeforces.com/profile/AksLolCoding",
+      "visible": true,
+      "rect": {
+        "x": 770.683349609375,
+        "y": 5943.83349609375,
+        "width": 94.63333129882812,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-244",
+      "tag": "a",
+      "label": "turska",
+      "href": "https://codeforces.com/profile/turska",
+      "visible": true,
+      "rect": {
+        "x": 873.11669921875,
+        "y": 5943.83349609375,
+        "width": 41.98333740234375,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-245",
+      "tag": "a",
+      "label": "JoenPoenMan",
+      "href": "https://codeforces.com/profile/JoenPoenMan",
+      "visible": true,
+      "rect": {
+        "x": 922.9000244140625,
+        "y": 5943.83349609375,
+        "width": 94.70001220703125,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-246",
+      "tag": "a",
+      "label": "kevinyang",
+      "href": "https://codeforces.com/profile/kevinyang",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 5963.43310546875,
+        "width": 67.39999389648438,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-247",
+      "tag": "a",
+      "label": "miniyahirpro",
+      "href": "https://codeforces.com/profile/miniyahirpro",
+      "visible": true,
+      "rect": {
+        "x": 272.70001220703125,
+        "y": 5963.43310546875,
+        "width": 84.58334350585938,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-248",
+      "tag": "a",
+      "label": "AmShZ",
+      "href": "https://codeforces.com/profile/AmShZ",
+      "visible": true,
+      "rect": {
+        "x": 365.08331298828125,
+        "y": 5963.43310546875,
+        "width": 49.01667785644531,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-249",
+      "tag": "a",
+      "label": "pyoro",
+      "href": "https://codeforces.com/profile/pyoro",
+      "visible": true,
+      "rect": {
+        "x": 421.8999938964844,
+        "y": 5963.43310546875,
+        "width": 38.23333740234375,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-250",
+      "tag": "a",
+      "label": "Blagoj",
+      "href": "https://codeforces.com/profile/Blagoj",
+      "visible": true,
+      "rect": {
+        "x": 467.933349609375,
+        "y": 5963.43310546875,
+        "width": 42.58332824707031,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-251",
+      "tag": "a",
+      "label": "br1g",
+      "href": "https://codeforces.com/profile/br1g",
+      "visible": true,
+      "rect": {
+        "x": 518.316650390625,
+        "y": 5963.43310546875,
+        "width": 30.333328247070312,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-252",
+      "tag": "a",
+      "label": "Juanchoki",
+      "href": "https://codeforces.com/profile/Juanchoki",
+      "visible": true,
+      "rect": {
+        "x": 556.4500122070312,
+        "y": 5963.43310546875,
+        "width": 69.18333435058594,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-253",
+      "tag": "a",
+      "label": "prvocislo",
+      "href": "https://codeforces.com/profile/prvocislo",
+      "visible": true,
+      "rect": {
+        "x": 633.433349609375,
+        "y": 5963.43310546875,
+        "width": 62.21665954589844,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-254",
+      "tag": "a",
+      "label": "osvarp",
+      "href": "https://codeforces.com/profile/osvarp",
+      "visible": true,
+      "rect": {
+        "x": 703.4500122070312,
+        "y": 5963.43310546875,
+        "width": 45.44999694824219,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-255",
+      "tag": "a",
+      "label": "ecnerwala",
+      "href": "https://codeforces.com/profile/ecnerwala",
+      "visible": true,
+      "rect": {
+        "x": 756.7000122070312,
+        "y": 5963.43310546875,
+        "width": 67.94999694824219,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-256",
+      "tag": "a",
+      "label": "Argentum47",
+      "href": "https://codeforces.com/profile/Argentum47",
+      "visible": true,
+      "rect": {
+        "x": 832.4500122070312,
+        "y": 5963.43310546875,
+        "width": 81.61666870117188,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-257",
+      "tag": "a",
+      "label": "Keshi",
+      "href": "https://codeforces.com/profile/Keshi",
+      "visible": true,
+      "rect": {
+        "x": 921.86669921875,
+        "y": 5963.43310546875,
+        "width": 37.81666564941406,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-258",
+      "tag": "a",
+      "label": "prins",
+      "href": "https://codeforces.com/profile/prins",
+      "visible": true,
+      "rect": {
+        "x": 967.4833374023438,
+        "y": 5963.43310546875,
+        "width": 34.166656494140625,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-259",
+      "tag": "a",
+      "label": "racsosabe",
+      "href": "https://codeforces.com/profile/racsosabe",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 5983.033203125,
+        "width": 69.43333435058594,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-260",
+      "tag": "a",
+      "label": "danielrmzkuhn1",
+      "href": "https://codeforces.com/profile/danielrmzkuhn1",
+      "visible": true,
+      "rect": {
+        "x": 274.73333740234375,
+        "y": 5983.033203125,
+        "width": 106.55000305175781,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-261",
+      "tag": "a",
+      "label": "0xor1",
+      "href": "https://codeforces.com/profile/0xor1",
+      "visible": true,
+      "rect": {
+        "x": 389.08331298828125,
+        "y": 5983.033203125,
+        "width": 37,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-262",
+      "tag": "a",
+      "label": "temporary1",
+      "href": "https://codeforces.com/profile/temporary1",
+      "visible": true,
+      "rect": {
+        "x": 433.8833312988281,
+        "y": 5983.033203125,
+        "width": 76.56666564941406,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-263",
+      "tag": "a",
+      "label": "nik_exists",
+      "href": "https://codeforces.com/profile/nik_exists",
+      "visible": true,
+      "rect": {
+        "x": 518.25,
+        "y": 5983.033203125,
+        "width": 67.39999389648438,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-264",
+      "tag": "a",
+      "label": "nifeshe",
+      "href": "https://codeforces.com/profile/nifeshe",
+      "visible": true,
+      "rect": {
+        "x": 593.4500122070312,
+        "y": 5983.033203125,
+        "width": 49.01666259765625,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-265",
+      "tag": "a",
+      "label": "Edu175",
+      "href": "https://codeforces.com/profile/Edu175",
+      "visible": true,
+      "rect": {
+        "x": 650.2666625976562,
+        "y": 5983.033203125,
+        "width": 49.633331298828125,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-266",
+      "tag": "a",
+      "label": "CSQ31",
+      "href": "https://codeforces.com/profile/CSQ31",
+      "visible": true,
+      "rect": {
+        "x": 707.7000122070312,
+        "y": 5983.033203125,
+        "width": 45.93333435058594,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-267",
+      "tag": "a",
+      "label": "tourist",
+      "href": "https://codeforces.com/profile/tourist",
+      "visible": true,
+      "rect": {
+        "x": 761.433349609375,
+        "y": 5983.033203125,
+        "width": 43.33332824707031,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-268",
+      "tag": "a",
+      "label": "Jose_17",
+      "href": "https://codeforces.com/profile/Jose_17",
+      "visible": true,
+      "rect": {
+        "x": 812.566650390625,
+        "y": 5983.033203125,
+        "width": 55.25,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-269",
+      "tag": "a",
+      "label": "x93bd0",
+      "href": "https://codeforces.com/profile/x93bd0",
+      "visible": true,
+      "rect": {
+        "x": 875.61669921875,
+        "y": 5983.033203125,
+        "width": 48.23333740234375,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-270",
+      "tag": "a",
+      "label": "Alexdat2000",
+      "href": "https://codeforces.com/profile/Alexdat2000",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 6023.63330078125,
+        "width": 93.58332824707031,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-271",
+      "tag": "a",
+      "label": "ocarima",
+      "href": "https://codeforces.com/profile/ocarima",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 6065.7333984375,
+        "width": 64.48333740234375,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-272",
+      "tag": "a",
+      "label": "MikeMirzayanov",
+      "href": "https://codeforces.com/profile/MikeMirzayanov",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 6106.83349609375,
+        "width": 117.18333435058594,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-273",
+      "tag": "a",
+      "label": "KAN",
+      "href": "https://codeforces.com/profile/KAN",
+      "visible": true,
+      "rect": {
+        "x": 333.51666259765625,
+        "y": 6106.83349609375,
+        "width": 33.66667175292969,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-274",
+      "tag": "a",
+      "label": "ozy1220",
+      "href": "https://codeforces.com/profile/ozy1220",
+      "visible": true,
+      "rect": {
+        "x": 257.29998779296875,
+        "y": 6147.43310546875,
+        "width": 54.5,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-275",
+      "tag": "a",
+      "label": "El Editorial",
+      "href": "https://codeforces.com/blog/entry/157634",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 6647.93310546875,
+        "width": 66.13333129882812,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-276",
+      "tag": "a",
+      "label": "Full text and comments »",
+      "href": "https://codeforces.com/blog/entry/157501",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 6680.93310546875,
+        "width": 134,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-277",
+      "tag": "a",
+      "label": "Codeforces Round 1127 (Div. 1, Based on Mexican Olympiad in Informatics 2026)",
+      "href": "https://codeforces.com/contest/2273",
+      "visible": true,
+      "rect": {
+        "x": 293.6499938964844,
+        "y": 6710.83349609375,
+        "width": 398.16668701171875,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-278",
+      "tag": "a",
+      "label": "Codeforces Round 1127 (Div. 2, Based on Mexican Olympiad in Informatics 2026)",
+      "href": "https://codeforces.com/contest/2274",
+      "visible": true,
+      "rect": {
+        "x": 293.6499938964844,
+        "y": 6732.33349609375,
+        "width": 398.16668701171875,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-279",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 193.9499969482422,
+        "y": 6779.9501953125,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-280",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 257.9666748046875,
+        "y": 6779.9501953125,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-281",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/profile/efishel",
+      "visible": true,
+      "rect": {
+        "x": 815.4833374023438,
+        "y": 6777.38330078125,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-282",
+      "tag": "a",
+      "label": "efishel",
+      "href": "https://codeforces.com/profile/efishel",
+      "visible": true,
+      "rect": {
+        "x": 834.9833374023438,
+        "y": 6777.38330078125,
+        "width": 36.399993896484375,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-283",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/blog/entry/157501#comments",
+      "visible": true,
+      "rect": {
+        "x": 998.5499877929688,
+        "y": 6777.38330078125,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-284",
+      "tag": "a",
+      "label": "105",
+      "href": "https://codeforces.com/blog/entry/157501#comments",
+      "visible": true,
+      "rect": {
+        "x": 1018.0499877929688,
+        "y": 6777.38330078125,
+        "width": 21,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-285",
+      "tag": "a",
+      "label": "DeepInfra Round 1 (Codeforces Round 1126, Div. 1 + Div. 2)",
+      "href": "https://codeforces.com/blog/entry/157352",
+      "visible": true,
+      "rect": {
+        "x": 181.5,
+        "y": 6831.93310546875,
+        "width": 878,
+        "height": 28
+      }
+    },
+    {
+      "id": "el-286",
+      "tag": "a",
+      "label": "employed",
+      "href": "https://codeforces.com/profile/employed",
+      "visible": true,
+      "rect": {
+        "x": 201.71665954589844,
+        "y": 6871.93310546875,
+        "width": 64.81668090820312,
+        "height": 17
+      }
+    },
+    {
+      "id": "el-287",
+      "tag": "a",
+      "label": "DeepInfra Round 1 (Codeforces Round 1126, Div. 1 + Div. 2)",
+      "href": "https://codeforces.com/contest/2271",
+      "visible": true,
+      "rect": {
+        "x": 386.4666748046875,
+        "y": 6952.83349609375,
+        "width": 376,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-288",
+      "tag": "a",
+      "label": "Saturday, October 10, 2026 at 20:35UTC+5.5",
+      "href": "https://www.timeanddate.com/worldclock/fixedtime.html?day=10&month=10&year=2026&hour=18&min=5&sec=0&p1=166",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 6952.83349609375,
+        "width": 857.8499755859375,
+        "height": 34.600006103515625
+      }
+    },
+    {
+      "id": "el-289",
+      "tag": "a",
+      "label": "employed",
+      "href": "https://codeforces.com/profile/employed",
+      "visible": true,
+      "rect": {
+        "x": 398.83331298828125,
+        "y": 7051.33349609375,
+        "width": 64.81666564941406,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-290",
+      "tag": "a",
+      "label": "nifeshe",
+      "href": "https://codeforces.com/profile/nifeshe",
+      "visible": true,
+      "rect": {
+        "x": 628.2166748046875,
+        "y": 7051.33349609375,
+        "width": 49.01667785644531,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-291",
+      "tag": "a",
+      "label": "nifeshe",
+      "href": "https://codeforces.com/profile/nifeshe",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 7140.13330078125,
+        "width": 49.01666259765625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-292",
+      "tag": "a",
+      "label": "Dominater069",
+      "href": "https://codeforces.com/profile/Dominater069",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 7163.13330078125,
+        "width": 92.51666259765625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-293",
+      "tag": "a",
+      "label": "EvenImage",
+      "href": "https://codeforces.com/profile/EvenImage",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 7186.13330078125,
+        "width": 73.23333740234375,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-294",
+      "tag": "a",
+      "label": "AksLolCoding",
+      "href": "https://codeforces.com/profile/AksLolCoding",
+      "visible": true,
+      "rect": {
+        "x": 303.73333740234375,
+        "y": 7186.13330078125,
+        "width": 94.63333129882812,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-295",
+      "tag": "a",
+      "label": "ApraCadabra",
+      "href": "https://codeforces.com/profile/ApraCadabra",
+      "visible": true,
+      "rect": {
+        "x": 406.16668701171875,
+        "y": 7186.13330078125,
+        "width": 88.06666564941406,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-296",
+      "tag": "a",
+      "label": "Euclid73",
+      "href": "https://codeforces.com/profile/Euclid73",
+      "visible": true,
+      "rect": {
+        "x": 502.0333251953125,
+        "y": 7186.13330078125,
+        "width": 57.54998779296875,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-297",
+      "tag": "a",
+      "label": "linearspace",
+      "href": "https://codeforces.com/profile/linearspace",
+      "visible": true,
+      "rect": {
+        "x": 567.38330078125,
+        "y": 7186.13330078125,
+        "width": 77.25,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-298",
+      "tag": "a",
+      "label": "Mohammad_Hacker",
+      "href": "https://codeforces.com/profile/Mohammad_Hacker",
+      "visible": true,
+      "rect": {
+        "x": 652.433349609375,
+        "y": 7186.13330078125,
+        "width": 132.14999389648438,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-299",
+      "tag": "a",
+      "label": "naneosmic",
+      "href": "https://codeforces.com/profile/naneosmic",
+      "visible": true,
+      "rect": {
+        "x": 792.38330078125,
+        "y": 7186.13330078125,
+        "width": 73.13333129882812,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-300",
+      "tag": "a",
+      "label": "nik_exists",
+      "href": "https://codeforces.com/profile/nik_exists",
+      "visible": true,
+      "rect": {
+        "x": 873.316650390625,
+        "y": 7186.13330078125,
+        "width": 67.39999389648438,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-301",
+      "tag": "a",
+      "label": "omsincoconut",
+      "href": "https://codeforces.com/profile/omsincoconut",
+      "visible": true,
+      "rect": {
+        "x": 948.5166625976562,
+        "y": 7186.13330078125,
+        "width": 95.66667175292969,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-302",
+      "tag": "a",
+      "label": "Pie_TealCompressorDragon",
+      "href": "https://codeforces.com/profile/Pie_TealCompressorDragon",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 7207.13330078125,
+        "width": 187.3000030517578,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-303",
+      "tag": "a",
+      "label": "Rising-coder",
+      "href": "https://codeforces.com/profile/Rising-coder",
+      "visible": true,
+      "rect": {
+        "x": 417.79998779296875,
+        "y": 7207.13330078125,
+        "width": 85.69999694824219,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-304",
+      "tag": "a",
+      "label": "Rvess",
+      "href": "https://codeforces.com/profile/Rvess",
+      "visible": true,
+      "rect": {
+        "x": 511.29998779296875,
+        "y": 7207.13330078125,
+        "width": 41.116668701171875,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-305",
+      "tag": "a",
+      "label": "Sana",
+      "href": "https://codeforces.com/profile/Sana",
+      "visible": true,
+      "rect": {
+        "x": 560.2166748046875,
+        "y": 7207.13330078125,
+        "width": 33.51667785644531,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-306",
+      "tag": "a",
+      "label": "zyadhany",
+      "href": "https://codeforces.com/profile/zyadhany",
+      "visible": true,
+      "rect": {
+        "x": 601.5333251953125,
+        "y": 7207.13330078125,
+        "width": 63.399993896484375,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-307",
+      "tag": "a",
+      "label": "_______________________",
+      "href": "https://codeforces.com/profile/_______________________",
+      "visible": true,
+      "rect": {
+        "x": 672.7333374023438,
+        "y": 7207.13330078125,
+        "width": 179.01666259765625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-308",
+      "tag": "a",
+      "label": "FetFot",
+      "href": "https://codeforces.com/profile/FetFot",
+      "visible": true,
+      "rect": {
+        "x": 859.5499877929688,
+        "y": 7207.13330078125,
+        "width": 42.31666564941406,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-309",
+      "tag": "a",
+      "label": "A_G",
+      "href": "https://codeforces.com/profile/A_G",
+      "visible": true,
+      "rect": {
+        "x": 909.6666870117188,
+        "y": 7207.13330078125,
+        "width": 28.7833251953125,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-310",
+      "tag": "a",
+      "label": "flammifer",
+      "href": "https://codeforces.com/profile/flammifer",
+      "visible": true,
+      "rect": {
+        "x": 946.25,
+        "y": 7207.13330078125,
+        "width": 62.98333740234375,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-311",
+      "tag": "a",
+      "label": "catgirl",
+      "href": "https://codeforces.com/profile/catgirl",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 7228.13330078125,
+        "width": 41.81666564941406,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-312",
+      "tag": "a",
+      "label": "nifeshe",
+      "href": "https://codeforces.com/profile/nifeshe",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 7251.13330078125,
+        "width": 49.01666259765625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-313",
+      "tag": "a",
+      "label": "MikeMirzayanov",
+      "href": "https://codeforces.com/profile/MikeMirzayanov",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 7274.13330078125,
+        "width": 106.51666259765625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-314",
+      "tag": "a",
+      "label": "KAN",
+      "href": "https://codeforces.com/profile/KAN",
+      "visible": true,
+      "rect": {
+        "x": 360.3666687011719,
+        "y": 7274.13330078125,
+        "width": 30.583328247070312,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-315",
+      "tag": "a",
+      "label": "cadmiumky",
+      "href": "https://codeforces.com/profile/cadmiumky",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 7416.93310546875,
+        "width": 77.38333129882812,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-316",
+      "tag": "a",
+      "label": "Um_nik",
+      "href": "https://codeforces.com/profile/Um_nik",
+      "visible": true,
+      "rect": {
+        "x": 282.683349609375,
+        "y": 7416.93310546875,
+        "width": 50.600006103515625,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-317",
+      "tag": "a",
+      "label": "_istil",
+      "href": "https://codeforces.com/profile/_istil",
+      "visible": true,
+      "rect": {
+        "x": 341.08331298828125,
+        "y": 7416.93310546875,
+        "width": 31.883331298828125,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-318",
+      "tag": "a",
+      "label": "Intellegent",
+      "href": "https://codeforces.com/profile/Intellegent",
+      "visible": true,
+      "rect": {
+        "x": 380.76666259765625,
+        "y": 7416.93310546875,
+        "width": 70.03334045410156,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-319",
+      "tag": "a",
+      "label": "cgmoreda",
+      "href": "https://codeforces.com/profile/cgmoreda",
+      "visible": true,
+      "rect": {
+        "x": 458.6000061035156,
+        "y": 7416.93310546875,
+        "width": 67,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-320",
+      "tag": "a",
+      "label": "sammyuri",
+      "href": "https://codeforces.com/profile/sammyuri",
+      "visible": true,
+      "rect": {
+        "x": 533.4000244140625,
+        "y": 7416.93310546875,
+        "width": 65.86666870117188,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-321",
+      "tag": "a",
+      "label": "Error_Yuan",
+      "href": "https://codeforces.com/profile/Error_Yuan",
+      "visible": true,
+      "rect": {
+        "x": 607.066650390625,
+        "y": 7416.93310546875,
+        "width": 75.5,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-322",
+      "tag": "a",
+      "label": "cry",
+      "href": "https://codeforces.com/profile/cry",
+      "visible": true,
+      "rect": {
+        "x": 690.36669921875,
+        "y": 7416.93310546875,
+        "width": 21.316665649414062,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-323",
+      "tag": "a",
+      "label": "SpyrosAliv",
+      "href": "https://codeforces.com/profile/SpyrosAliv",
+      "visible": true,
+      "rect": {
+        "x": 719.4833374023438,
+        "y": 7416.93310546875,
+        "width": 72.73332214355469,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-324",
+      "tag": "a",
+      "label": "Arpa",
+      "href": "https://codeforces.com/profile/Arpa",
+      "visible": true,
+      "rect": {
+        "x": 827.2666625976562,
+        "y": 7416.93310546875,
+        "width": 31.883331298828125,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-325",
+      "tag": "a",
+      "label": "DeepInfra Round 1",
+      "href": "https://codeforces.com/contest/2271",
+      "visible": true,
+      "rect": {
+        "x": 400.433349609375,
+        "y": 7707.2333984375,
+        "width": 118.06666564941406,
+        "height": 17
+      }
+    },
+    {
+      "id": "el-326",
+      "tag": "a",
+      "label": "DeepInfra",
+      "href": "https://deepinfra.com/",
+      "visible": true,
+      "rect": {
+        "x": 214.46665954589844,
+        "y": 7748.83349609375,
+        "width": 64.80000305175781,
+        "height": 17
+      }
+    },
+    {
+      "id": "el-327",
+      "tag": "a",
+      "label": "Codeforces Beta Round 50",
+      "href": "https://codeforces.com/contest/54",
+      "visible": true,
+      "rect": {
+        "x": 814.86669921875,
+        "y": 7872.83349609375,
+        "width": 168.18333435058594,
+        "height": 17
+      }
+    },
+    {
+      "id": "el-328",
+      "tag": "a",
+      "label": "Apply",
+      "href": "https://codeforces.com/userForm/20aa753634538aa4",
+      "visible": true,
+      "rect": {
+        "x": 585.5166625976562,
+        "y": 8179.13330078125,
+        "width": 85.94999694824219,
+        "height": 37
+      }
+    },
+    {
+      "id": "el-329",
+      "tag": "a",
+      "label": "QwertyPi",
+      "href": "https://codeforces.com/profile/QwertyPi",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 8572.1337890625,
+        "width": 60.91667175292969,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-330",
+      "tag": "a",
+      "label": "LMydd0225",
+      "href": "https://codeforces.com/profile/LMydd0225",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 8593.1337890625,
+        "width": 76.11666870117188,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-331",
+      "tag": "a",
+      "label": "Kevin114514",
+      "href": "https://codeforces.com/profile/Kevin114514",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 8614.1337890625,
+        "width": 84.15000915527344,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-332",
+      "tag": "a",
+      "label": "squareOf105",
+      "href": "https://codeforces.com/profile/squareOf105",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 8635.1337890625,
+        "width": 84.86666870117188,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-333",
+      "tag": "a",
+      "label": "Radewoosh",
+      "href": "https://codeforces.com/profile/Radewoosh",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 8656.1337890625,
+        "width": 78.26666259765625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-334",
+      "tag": "a",
+      "label": "353cerega",
+      "href": "https://codeforces.com/profile/353cerega",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 8677.1337890625,
+        "width": 68.63333129882812,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-335",
+      "tag": "a",
+      "label": "radoslav11",
+      "href": "https://codeforces.com/profile/radoslav11",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 8698.1337890625,
+        "width": 72.94999694824219,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-336",
+      "tag": "a",
+      "label": "idontwannadothisanymore",
+      "href": "https://codeforces.com/profile/idontwannadothisanymore",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 8719.1337890625,
+        "width": 177.9499969482422,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-337",
+      "tag": "a",
+      "label": "potato167",
+      "href": "https://codeforces.com/profile/potato167",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 8740.1337890625,
+        "width": 65.90000915527344,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-338",
+      "tag": "a",
+      "label": "jiangly",
+      "href": "https://codeforces.com/profile/jiangly",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 8761.1337890625,
+        "width": 44.19999694824219,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-339",
+      "tag": "a",
+      "label": "skinnyasiandude",
+      "href": "https://codeforces.com/profile/skinnyasiandude",
+      "visible": true,
+      "rect": {
+        "x": 234.0500030517578,
+        "y": 8843.7333984375,
+        "width": 113.0333251953125,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-340",
+      "tag": "a",
+      "label": "turmax",
+      "href": "https://codeforces.com/profile/turmax",
+      "visible": true,
+      "rect": {
+        "x": 229.9499969482422,
+        "y": 8863.3330078125,
+        "width": 46.81666564941406,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-341",
+      "tag": "a",
+      "label": "Kevin114514",
+      "href": "https://codeforces.com/profile/Kevin114514",
+      "visible": true,
+      "rect": {
+        "x": 233.86666870117188,
+        "y": 8882.93359375,
+        "width": 84.14999389648438,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-342",
+      "tag": "a",
+      "label": "Prashant_ksy",
+      "href": "https://codeforces.com/profile/Prashant_ksy",
+      "visible": true,
+      "rect": {
+        "x": 233.85000610351562,
+        "y": 8902.533203125,
+        "width": 90.69999694824219,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-343",
+      "tag": "a",
+      "label": "ksun48",
+      "href": "https://codeforces.com/profile/ksun48",
+      "visible": true,
+      "rect": {
+        "x": 233.0833282470703,
+        "y": 8922.1337890625,
+        "width": 48.100006103515625,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-344",
+      "tag": "a",
+      "label": "ItzsleepyXD",
+      "href": "https://codeforces.com/profile/ItzsleepyXD",
+      "visible": true,
+      "rect": {
+        "x": 231.25,
+        "y": 8941.7333984375,
+        "width": 78.43333435058594,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-345",
+      "tag": "a",
+      "label": "PelicanPilot",
+      "href": "https://codeforces.com/profile/PelicanPilot",
+      "visible": true,
+      "rect": {
+        "x": 234.73333740234375,
+        "y": 8961.3330078125,
+        "width": 79.09999084472656,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-346",
+      "tag": "a",
+      "label": "Kevin114514",
+      "href": "https://codeforces.com/profile/Kevin114514",
+      "visible": true,
+      "rect": {
+        "x": 241.63333129882812,
+        "y": 8980.93359375,
+        "width": 84.15000915527344,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-347",
+      "tag": "a",
+      "label": "squareOf105",
+      "href": "https://codeforces.com/profile/squareOf105",
+      "visible": true,
+      "rect": {
+        "x": 241.63333129882812,
+        "y": 9000.533203125,
+        "width": 84.86666870117188,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-348",
+      "tag": "a",
+      "label": "Full text and comments »",
+      "href": "https://codeforces.com/blog/entry/157352",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 9035.1337890625,
+        "width": 134,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-349",
+      "tag": "a",
+      "label": "DeepInfra Round 1 (Codeforces Round 1126, Div. 1 + Div. 2)",
+      "href": "https://codeforces.com/contest/2271",
+      "visible": true,
+      "rect": {
+        "x": 293.6499938964844,
+        "y": 9065.033203125,
+        "width": 294.95001220703125,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-350",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 193.9499969482422,
+        "y": 9112.650390625,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-351",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 257.9666748046875,
+        "y": 9112.650390625,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-352",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/profile/employed",
+      "visible": true,
+      "rect": {
+        "x": 801.2666625976562,
+        "y": 9110.0830078125,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-353",
+      "tag": "a",
+      "label": "employed",
+      "href": "https://codeforces.com/profile/employed",
+      "visible": true,
+      "rect": {
+        "x": 820.7666625976562,
+        "y": 9110.0830078125,
+        "width": 54.583343505859375,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-354",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/blog/entry/157352#comments",
+      "visible": true,
+      "rect": {
+        "x": 1005.5499877929688,
+        "y": 9110.0830078125,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-355",
+      "tag": "a",
+      "label": "87",
+      "href": "https://codeforces.com/blog/entry/157352#comments",
+      "visible": true,
+      "rect": {
+        "x": 1025.050048828125,
+        "y": 9110.0830078125,
+        "width": 14,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-356",
+      "tag": "a",
+      "label": "DeepInfra Intro",
+      "href": "https://codeforces.com/blog/entry/157322",
+      "visible": true,
+      "rect": {
+        "x": 181.5,
+        "y": 9164.6337890625,
+        "width": 878,
+        "height": 28
+      }
+    },
+    {
+      "id": "el-357",
+      "tag": "a",
+      "label": "Temirulan",
+      "href": "https://codeforces.com/profile/Temirulan",
+      "visible": true,
+      "rect": {
+        "x": 201.71665954589844,
+        "y": 9204.6337890625,
+        "width": 65.91667175292969,
+        "height": 17
+      }
+    },
+    {
+      "id": "el-358",
+      "tag": "a",
+      "label": "history",
+      "href": "https://codeforces.com/topic/157966/en2",
+      "visible": true,
+      "rect": {
+        "x": 275.3999938964844,
+        "y": 9203.6337890625,
+        "width": 40.20001220703125,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-359",
+      "tag": "a",
+      "label": "DeepInfra Round 1",
+      "href": "https://codeforces.com/contest/2271",
+      "visible": true,
+      "rect": {
+        "x": 488.16668701171875,
+        "y": 9306.533203125,
+        "width": 118.09999084472656,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-360",
+      "tag": "a",
+      "label": "DeepInfra",
+      "href": "https://deepinfra.com/",
+      "visible": true,
+      "rect": {
+        "x": 214.4166717529297,
+        "y": 9347.1337890625,
+        "width": 64.79998779296875,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-361",
+      "tag": "a",
+      "label": "PERNEKHAN",
+      "href": "https://codeforces.com/profile/PERNEKHAN",
+      "visible": true,
+      "rect": {
+        "x": 857.5,
+        "y": 9983.533203125,
+        "width": 88.26666259765625,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-362",
+      "tag": "a",
+      "label": "yessenzhar",
+      "href": "https://codeforces.com/profile/yessenzhar",
+      "visible": true,
+      "rect": {
+        "x": 953.566650390625,
+        "y": 9983.533203125,
+        "width": 76.08332824707031,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-363",
+      "tag": "a",
+      "label": "Zharaskhan",
+      "href": "https://codeforces.com/profile/Zharaskhan",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 10003.1337890625,
+        "width": 78.60000610351562,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-364",
+      "tag": "a",
+      "label": "Johan.de.Ruiter",
+      "href": "https://codeforces.com/profile/Johan.de.Ruiter",
+      "visible": true,
+      "rect": {
+        "x": 283.8999938964844,
+        "y": 10003.1337890625,
+        "width": 98.20001220703125,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-365",
+      "tag": "a",
+      "label": "rmn",
+      "href": "https://codeforces.com/profile/rmn",
+      "visible": true,
+      "rect": {
+        "x": 389.8999938964844,
+        "y": 10003.1337890625,
+        "width": 26.433334350585938,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-366",
+      "tag": "a",
+      "label": "Codeforces Beta Round 50",
+      "href": "https://codeforces.com/contest/54",
+      "visible": true,
+      "rect": {
+        "x": 737.36669921875,
+        "y": 10005.43359375,
+        "width": 168.2833251953125,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-367",
+      "tag": "a",
+      "label": "Apply",
+      "href": "https://codeforces.com/userForm/20aa753634538aa4",
+      "visible": true,
+      "rect": {
+        "x": 585.5166625976562,
+        "y": 10204.3330078125,
+        "width": 85.94999694824219,
+        "height": 37
+      }
+    },
+    {
+      "id": "el-368",
+      "tag": "a",
+      "label": "website",
+      "href": "https://deepinfra.com/",
+      "visible": true,
+      "rect": {
+        "x": 522.9833374023438,
+        "y": 10264.6337890625,
+        "width": 51.26666259765625,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-369",
+      "tag": "a",
+      "label": "Saturday, October 10, 2026 at 20:35UTC+5.5",
+      "href": "https://www.timeanddate.com/worldclock/fixedtime.html?day=10&month=10&year=2026&hour=18&min=5&sec=0&p1=166",
+      "visible": true,
+      "rect": {
+        "x": 265.2166748046875,
+        "y": 10305.2333984375,
+        "width": 269.0666809082031,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-370",
+      "tag": "a",
+      "label": "Full text and comments »",
+      "href": "https://codeforces.com/blog/entry/157322",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 10517.7333984375,
+        "width": 134,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-371",
+      "tag": "a",
+      "label": "deepinfra",
+      "href": "https://codeforces.com/search?query=deepinfra",
+      "visible": true,
+      "rect": {
+        "x": 204.39999389648438,
+        "y": 10547.6337890625,
+        "width": 45.866668701171875,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-372",
+      "tag": "a",
+      "label": "sponsor",
+      "href": "https://codeforces.com/search?query=sponsor",
+      "visible": true,
+      "rect": {
+        "x": 264.066650390625,
+        "y": 10547.6337890625,
+        "width": 39.133331298828125,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-373",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 193.9499969482422,
+        "y": 10589.75,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-374",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 257.9666748046875,
+        "y": 10589.75,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-375",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/profile/Temirulan",
+      "visible": true,
+      "rect": {
+        "x": 801.2666625976562,
+        "y": 10587.18359375,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-376",
+      "tag": "a",
+      "label": "Temirulan",
+      "href": "https://codeforces.com/profile/Temirulan",
+      "visible": true,
+      "rect": {
+        "x": 820.7666625976562,
+        "y": 10587.18359375,
+        "width": 54.583343505859375,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-377",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/blog/entry/157322#comments",
+      "visible": true,
+      "rect": {
+        "x": 1005.5499877929688,
+        "y": 10587.18359375,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-378",
+      "tag": "a",
+      "label": "38",
+      "href": "https://codeforces.com/blog/entry/157322#comments",
+      "visible": true,
+      "rect": {
+        "x": 1025.050048828125,
+        "y": 10587.18359375,
+        "width": 14,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-379",
+      "tag": "a",
+      "label": "Codeforces Round #1125 (Div. 3)",
+      "href": "https://codeforces.com/blog/entry/157297",
+      "visible": true,
+      "rect": {
+        "x": 181.5,
+        "y": 10641.7333984375,
+        "width": 878,
+        "height": 28
+      }
+    },
+    {
+      "id": "el-380",
+      "tag": "a",
+      "label": "K1o0n",
+      "href": "https://codeforces.com/profile/K1o0n",
+      "visible": true,
+      "rect": {
+        "x": 201.71665954589844,
+        "y": 10681.7333984375,
+        "width": 42.76667785644531,
+        "height": 17
+      }
+    },
+    {
+      "id": "el-381",
+      "tag": "a",
+      "label": "Codeforces Round 1125 (Div. 3)",
+      "href": "https://codeforces.com/contest/2275",
+      "visible": true,
+      "rect": {
+        "x": 422.566650390625,
+        "y": 10722.033203125,
+        "width": 199.3333282470703,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-382",
+      "tag": "a",
+      "label": "Wednesday, October 7, 2026 at 20:15UTC+5.5",
+      "href": "https://www.timeanddate.com/worldclock/fixedtime.html?day=7&month=10&year=2026&hour=17&min=45&sec=0&p1=166",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 10722.033203125,
+        "width": 777.7333374023438,
+        "height": 34.59999084472656
+      }
+    },
+    {
+      "id": "el-383",
+      "tag": "a",
+      "label": "Noobish_Monk",
+      "href": "https://codeforces.com/profile/Noobish_Monk",
+      "visible": true,
+      "rect": {
+        "x": 942.8333129882812,
+        "y": 10779.93359375,
+        "width": 100.41667175292969,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-384",
+      "tag": "a",
+      "label": "Gornak40",
+      "href": "https://codeforces.com/profile/Gornak40",
+      "visible": true,
+      "rect": {
+        "x": 224.75,
+        "y": 10799.533203125,
+        "width": 64.55000305175781,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-385",
+      "tag": "a",
+      "label": "remind you",
+      "href": "https://codeforces.com/blog/entry/59228",
+      "visible": true,
+      "rect": {
+        "x": 222,
+        "y": 10942.8330078125,
+        "width": 68.80000305175781,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-386",
+      "tag": "a",
+      "label": "rule restricting the use of AI",
+      "href": "https://codeforces.com/blog/entry/133941",
+      "visible": true,
+      "rect": {
+        "x": 253.9499969482422,
+        "y": 11110.43359375,
+        "width": 170.10000610351562,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-387",
+      "tag": "a",
+      "label": "Gornak40",
+      "href": "https://codeforces.com/profile/Gornak40",
+      "visible": true,
+      "rect": {
+        "x": 551.9166870117188,
+        "y": 11127.7333984375,
+        "width": 64.54998779296875,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-388",
+      "tag": "a",
+      "label": "Gornak40",
+      "href": "https://codeforces.com/profile/Gornak40",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 11194.93359375,
+        "width": 64.55000305175781,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-389",
+      "tag": "a",
+      "label": "Noobish_Monk",
+      "href": "https://codeforces.com/profile/Noobish_Monk",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 11214.533203125,
+        "width": 100.41667175292969,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-390",
+      "tag": "a",
+      "label": "Kapt",
+      "href": "https://codeforces.com/profile/Kapt",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 11234.1337890625,
+        "width": 30.98333740234375,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-391",
+      "tag": "a",
+      "label": "Ormlis",
+      "href": "https://codeforces.com/profile/Ormlis",
+      "visible": true,
+      "rect": {
+        "x": 261.48333740234375,
+        "y": 11234.1337890625,
+        "width": 44.366668701171875,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-392",
+      "tag": "a",
+      "label": "KseniaShk",
+      "href": "https://codeforces.com/profile/KseniaShk",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 11253.7333984375,
+        "width": 71.60000610351562,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-393",
+      "tag": "a",
+      "label": "cry",
+      "href": "https://codeforces.com/profile/cry",
+      "visible": true,
+      "rect": {
+        "x": 302.1000061035156,
+        "y": 11253.7333984375,
+        "width": 21.316665649414062,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-394",
+      "tag": "a",
+      "label": "snowysecret",
+      "href": "https://codeforces.com/profile/snowysecret",
+      "visible": true,
+      "rect": {
+        "x": 331.2166748046875,
+        "y": 11253.7333984375,
+        "width": 84.7166748046875,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-395",
+      "tag": "a",
+      "label": "TheTitan008",
+      "href": "https://codeforces.com/profile/TheTitan008",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 11273.3330078125,
+        "width": 81.7166748046875,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-396",
+      "tag": "a",
+      "label": "Nogaybica",
+      "href": "https://codeforces.com/profile/Nogaybica",
+      "visible": true,
+      "rect": {
+        "x": 312.2166748046875,
+        "y": 11273.3330078125,
+        "width": 70.61666870117188,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-397",
+      "tag": "a",
+      "label": "MrKisame",
+      "href": "https://codeforces.com/profile/MrKisame",
+      "visible": true,
+      "rect": {
+        "x": 390.6333312988281,
+        "y": 11273.3330078125,
+        "width": 66.98333740234375,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-398",
+      "tag": "a",
+      "label": "Mr.Backender",
+      "href": "https://codeforces.com/profile/Mr.Backender",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 11292.93359375,
+        "width": 91.51666259765625,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-399",
+      "tag": "a",
+      "label": "chromate00",
+      "href": "https://codeforces.com/profile/chromate00",
+      "visible": true,
+      "rect": {
+        "x": 322.01666259765625,
+        "y": 11292.93359375,
+        "width": 78.43333435058594,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-400",
+      "tag": "a",
+      "label": "OG_Maksimchick4",
+      "href": "https://codeforces.com/profile/OG_Maksimchick4",
+      "visible": true,
+      "rect": {
+        "x": 408.25,
+        "y": 11292.93359375,
+        "width": 124.35000610351562,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-401",
+      "tag": "a",
+      "label": "plushka_m",
+      "href": "https://codeforces.com/profile/plushka_m",
+      "visible": true,
+      "rect": {
+        "x": 540.4000244140625,
+        "y": 11292.93359375,
+        "width": 73.10000610351562,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-402",
+      "tag": "a",
+      "label": "Kolyanchick",
+      "href": "https://codeforces.com/profile/Kolyanchick",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 11312.533203125,
+        "width": 81.7166748046875,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-403",
+      "tag": "a",
+      "label": "Everes",
+      "href": "https://codeforces.com/profile/Everes",
+      "visible": true,
+      "rect": {
+        "x": 312.2166748046875,
+        "y": 11312.533203125,
+        "width": 45.333343505859375,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-404",
+      "tag": "a",
+      "label": "Dan1l0s",
+      "href": "https://codeforces.com/profile/Dan1l0s",
+      "visible": true,
+      "rect": {
+        "x": 365.3500061035156,
+        "y": 11312.533203125,
+        "width": 53.69999694824219,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-405",
+      "tag": "a",
+      "label": "Hooded_Hood",
+      "href": "https://codeforces.com/profile/Hooded_Hood",
+      "visible": true,
+      "rect": {
+        "x": 426.8500061035156,
+        "y": 11312.533203125,
+        "width": 95.61665344238281,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-406",
+      "tag": "a",
+      "label": "SqwoM",
+      "href": "https://codeforces.com/profile/SqwoM",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 11332.1337890625,
+        "width": 48.94999694824219,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-407",
+      "tag": "a",
+      "label": "myav",
+      "href": "https://codeforces.com/profile/myav",
+      "visible": true,
+      "rect": {
+        "x": 279.45001220703125,
+        "y": 11332.1337890625,
+        "width": 35.03334045410156,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-408",
+      "tag": "a",
+      "label": "naakinn",
+      "href": "https://codeforces.com/profile/naakinn",
+      "visible": true,
+      "rect": {
+        "x": 322.2833251953125,
+        "y": 11332.1337890625,
+        "width": 52.883331298828125,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-409",
+      "tag": "a",
+      "label": "ChernovVladimir",
+      "href": "https://codeforces.com/profile/ChernovVladimir",
+      "visible": true,
+      "rect": {
+        "x": 382.9666748046875,
+        "y": 11332.1337890625,
+        "width": 111.58334350585938,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-410",
+      "tag": "a",
+      "label": "shishko.av",
+      "href": "https://codeforces.com/profile/shishko.av",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 11351.7333984375,
+        "width": 71.66667175292969,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-411",
+      "tag": "a",
+      "label": "Margaryan_Armina",
+      "href": "https://codeforces.com/profile/Margaryan_Armina",
+      "visible": true,
+      "rect": {
+        "x": 302.16668701171875,
+        "y": 11351.7333984375,
+        "width": 126.81666564941406,
+        "height": 19.599990844726562
+      }
+    },
+    {
+      "id": "el-412",
+      "tag": "a",
+      "label": "zetrock1",
+      "href": "https://codeforces.com/profile/zetrock1",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 11371.3330078125,
+        "width": 52.383331298828125,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-413",
+      "tag": "a",
+      "label": "Vladosiya",
+      "href": "https://codeforces.com/profile/Vladosiya",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 11390.93359375,
+        "width": 65.08334350585938,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-414",
+      "tag": "a",
+      "label": "MikeMirzayanov",
+      "href": "https://codeforces.com/profile/MikeMirzayanov",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 11430.1337890625,
+        "width": 106.51666259765625,
+        "height": 19.600006103515625
+      }
+    },
+    {
+      "id": "el-415",
+      "tag": "a",
+      "label": "phibrain",
+      "href": "https://codeforces.com/profile/phibrain",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 12225.033203125,
+        "width": 55.30000305175781,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-416",
+      "tag": "a",
+      "label": "iaica1488",
+      "href": "https://codeforces.com/profile/iaica1488",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 12246.033203125,
+        "width": 62.350006103515625,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-417",
+      "tag": "a",
+      "label": "lixintianshen",
+      "href": "https://codeforces.com/profile/lixintianshen",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 12267.033203125,
+        "width": 85.56666564941406,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-418",
+      "tag": "a",
+      "label": "JustPinkiePie",
+      "href": "https://codeforces.com/profile/JustPinkiePie",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 12288.033203125,
+        "width": 90.68333435058594,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-419",
+      "tag": "a",
+      "label": "t3jtex",
+      "href": "https://codeforces.com/profile/t3jtex",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 12309.033203125,
+        "width": 36.19999694824219,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-420",
+      "tag": "a",
+      "label": "abc864197532",
+      "href": "https://codeforces.com/profile/abc864197532",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 12377.6337890625,
+        "width": 94.16667175292969,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-421",
+      "tag": "a",
+      "label": "paracompact",
+      "href": "https://codeforces.com/profile/paracompact",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 12398.6337890625,
+        "width": 87.23333740234375,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-422",
+      "tag": "a",
+      "label": "peti1234",
+      "href": "https://codeforces.com/profile/peti1234",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 12419.6337890625,
+        "width": 55.94999694824219,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-423",
+      "tag": "a",
+      "label": "leg",
+      "href": "https://codeforces.com/profile/leg",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 12440.6337890625,
+        "width": 20.25,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-424",
+      "tag": "a",
+      "label": "StarSilk",
+      "href": "https://codeforces.com/profile/StarSilk",
+      "visible": true,
+      "rect": {
+        "x": 222.6999969482422,
+        "y": 12461.6337890625,
+        "width": 52.25,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-425",
+      "tag": "a",
+      "label": "editorial",
+      "href": "https://codeforces.com/blog/entry/157528",
+      "visible": true,
+      "rect": {
+        "x": 372.316650390625,
+        "y": 12505.93359375,
+        "width": 48.600006103515625,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-426",
+      "tag": "a",
+      "label": "ErrBrush",
+      "href": "https://codeforces.com/profile/ErrBrush",
+      "visible": true,
+      "rect": {
+        "x": 307.1000061035156,
+        "y": 12635.8330078125,
+        "width": 60.61665344238281,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-427",
+      "tag": "a",
+      "label": "paracompact",
+      "href": "https://codeforces.com/profile/paracompact",
+      "visible": true,
+      "rect": {
+        "x": 382.7166748046875,
+        "y": 12635.8330078125,
+        "width": 87.23333740234375,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-428",
+      "tag": "a",
+      "label": "MuoohlAG",
+      "href": "https://codeforces.com/profile/MuoohlAG",
+      "visible": true,
+      "rect": {
+        "x": 484.95001220703125,
+        "y": 12635.8330078125,
+        "width": 70.23333740234375,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-429",
+      "tag": "a",
+      "label": "dinhphong0703",
+      "href": "https://codeforces.com/profile/dinhphong0703",
+      "visible": true,
+      "rect": {
+        "x": 570.183349609375,
+        "y": 12635.8330078125,
+        "width": 103.41667175292969,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-430",
+      "tag": "a",
+      "label": "anuintech",
+      "href": "https://codeforces.com/profile/anuintech",
+      "visible": true,
+      "rect": {
+        "x": 688.5999755859375,
+        "y": 12635.8330078125,
+        "width": 60.5,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-431",
+      "tag": "a",
+      "label": "Adhoom",
+      "href": "https://codeforces.com/profile/Adhoom",
+      "visible": true,
+      "rect": {
+        "x": 764.0999755859375,
+        "y": 12635.8330078125,
+        "width": 56.5333251953125,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-432",
+      "tag": "a",
+      "label": "Horka",
+      "href": "https://codeforces.com/profile/Horka",
+      "visible": true,
+      "rect": {
+        "x": 835.63330078125,
+        "y": 12635.8330078125,
+        "width": 39.616668701171875,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-433",
+      "tag": "a",
+      "label": "RunTimeError2011",
+      "href": "https://codeforces.com/profile/RunTimeError2011",
+      "visible": true,
+      "rect": {
+        "x": 890.25,
+        "y": 12635.8330078125,
+        "width": 124.05000305175781,
+        "height": 21
+      }
+    },
+    {
+      "id": "el-434",
+      "tag": "a",
+      "label": "Full text and comments »",
+      "href": "https://codeforces.com/blog/entry/157297",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 12724.8330078125,
+        "width": 134,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-435",
+      "tag": "a",
+      "label": "Codeforces Round 1125 (Div. 3)",
+      "href": "https://codeforces.com/contest/2275",
+      "visible": true,
+      "rect": {
+        "x": 293.6499938964844,
+        "y": 12754.7333984375,
+        "width": 156.10000610351562,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-436",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 193.9499969482422,
+        "y": 12802.349609375,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-437",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 257.9666748046875,
+        "y": 12802.349609375,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-438",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/profile/K1o0n",
+      "visible": true,
+      "rect": {
+        "x": 812.4500122070312,
+        "y": 12799.783203125,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-439",
+      "tag": "a",
+      "label": "K1o0n",
+      "href": "https://codeforces.com/profile/K1o0n",
+      "visible": true,
+      "rect": {
+        "x": 831.9500122070312,
+        "y": 12799.783203125,
+        "width": 36.40000915527344,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-440",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/blog/entry/157297#comments",
+      "visible": true,
+      "rect": {
+        "x": 998.5499877929688,
+        "y": 12799.783203125,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-441",
+      "tag": "a",
+      "label": "143",
+      "href": "https://codeforces.com/blog/entry/157297#comments",
+      "visible": true,
+      "rect": {
+        "x": 1018.0499877929688,
+        "y": 12799.783203125,
+        "width": 21,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-442",
+      "tag": "a",
+      "label": "Telegram Returns as Title Sponsor of Codeforces!",
+      "href": "https://codeforces.com/blog/entry/156620",
+      "visible": true,
+      "rect": {
+        "x": 181.5,
+        "y": 12854.3330078125,
+        "width": 878,
+        "height": 28
+      }
+    },
+    {
+      "id": "el-443",
+      "tag": "a",
+      "label": "MikeMirzayanov",
+      "href": "https://codeforces.com/profile/MikeMirzayanov",
+      "visible": true,
+      "rect": {
+        "x": 201.71665954589844,
+        "y": 12894.3330078125,
+        "width": 106.51667785644531,
+        "height": 17
+      }
+    },
+    {
+      "id": "el-444",
+      "tag": "a",
+      "label": "Full text and comments »",
+      "href": "https://codeforces.com/blog/entry/156620",
+      "visible": true,
+      "rect": {
+        "x": 197.5,
+        "y": 13349.1337890625,
+        "width": 134,
+        "height": 14
+      }
+    },
+    {
+      "id": "el-445",
+      "tag": "a",
+      "label": "codeforces",
+      "href": "https://codeforces.com/search?query=codeforces",
+      "visible": true,
+      "rect": {
+        "x": 204.39999389648438,
+        "y": 13379.033203125,
+        "width": 53.80000305175781,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-446",
+      "tag": "a",
+      "label": "telegram",
+      "href": "https://codeforces.com/search?query=telegram",
+      "visible": true,
+      "rect": {
+        "x": 272,
+        "y": 13379.033203125,
+        "width": 42.80000305175781,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-447",
+      "tag": "a",
+      "label": "sponsor",
+      "href": "https://codeforces.com/search?query=sponsor",
+      "visible": true,
+      "rect": {
+        "x": 328.6000061035156,
+        "y": 13379.033203125,
+        "width": 38.51666259765625,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-448",
+      "tag": "a",
+      "label": "sponsorship",
+      "href": "https://codeforces.com/search?query=sponsorship",
+      "visible": true,
+      "rect": {
+        "x": 380.91668701171875,
+        "y": 13379.033203125,
+        "width": 59.31666564941406,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-449",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 193.9499969482422,
+        "y": 13421.150390625,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-450",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/#",
+      "visible": true,
+      "rect": {
+        "x": 266.3666687011719,
+        "y": 13421.150390625,
+        "width": 22,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-451",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/profile/MikeMirzayanov",
+      "visible": true,
+      "rect": {
+        "x": 757.88330078125,
+        "y": 13418.5830078125,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-452",
+      "tag": "a",
+      "label": "MikeMirzayanov",
+      "href": "https://codeforces.com/profile/MikeMirzayanov",
+      "visible": true,
+      "rect": {
+        "x": 777.38330078125,
+        "y": 13418.5830078125,
+        "width": 90.9666748046875,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-453",
+      "tag": "a",
+      "label": "",
+      "href": "https://codeforces.com/blog/entry/156620#comments",
+      "visible": true,
+      "rect": {
+        "x": 998.5499877929688,
+        "y": 13418.5830078125,
+        "width": 16,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-454",
+      "tag": "a",
+      "label": "140",
+      "href": "https://codeforces.com/blog/entry/156620#comments",
+      "visible": true,
+      "rect": {
+        "x": 1018.0499877929688,
+        "y": 13418.5830078125,
+        "width": 21,
+        "height": 15
+      }
+    },
+    {
+      "id": "el-455",
+      "tag": "a",
+      "label": "1",
+      "href": "https://codeforces.com/page/1",
+      "visible": true,
+      "rect": {
+        "x": 217.88333129882812,
+        "y": 13486.1337890625,
+        "width": 7.7833404541015625,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-456",
+      "tag": "a",
+      "label": "2",
+      "href": "https://codeforces.com/page/2",
+      "visible": true,
+      "rect": {
+        "x": 237.5500030517578,
+        "y": 13486.1337890625,
+        "width": 7.7833251953125,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-457",
+      "tag": "a",
+      "label": "3",
+      "href": "https://codeforces.com/page/3",
+      "visible": true,
+      "rect": {
+        "x": 256.2166748046875,
+        "y": 13486.1337890625,
+        "width": 7.7833404541015625,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-458",
+      "tag": "a",
+      "label": "266",
+      "href": "https://codeforces.com/page/266",
+      "visible": true,
+      "rect": {
+        "x": 290.41668701171875,
+        "y": 13486.1337890625,
+        "width": 23.349990844726562,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-459",
+      "tag": "a",
+      "label": "267",
+      "href": "https://codeforces.com/page/267",
+      "visible": true,
+      "rect": {
+        "x": 324.6499938964844,
+        "y": 13486.1337890625,
+        "width": 23.350006103515625,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-460",
+      "tag": "a",
+      "label": "→",
+      "href": "https://codeforces.com/page/2",
+      "visible": true,
+      "rect": {
+        "x": 355.3833312988281,
+        "y": 13473.1337890625,
+        "width": 28,
+        "height": 32
+      }
+    },
+    {
+      "id": "el-461",
+      "tag": "a",
+      "label": "Codeforces",
+      "href": "https://codeforces.com/",
+      "visible": true,
+      "rect": {
+        "x": 599.8333129882812,
+        "y": 13564.1337890625,
+        "width": 71.58334350585938,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-462",
+      "tag": "a",
+      "label": "mobile version",
+      "href": "https://codeforces.com/?mobile=true",
+      "visible": true,
+      "rect": {
+        "x": 803.6500244140625,
+        "y": 13612.1337890625,
+        "width": 90.26667785644531,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-463",
+      "tag": "a",
+      "label": "Privacy Policy",
+      "href": "https://codeforces.com/privacy",
+      "visible": true,
+      "rect": {
+        "x": 675.5999755859375,
+        "y": 13628.1337890625,
+        "width": 68.46665954589844,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-464",
+      "tag": "a",
+      "label": "Terms and Conditions",
+      "href": "https://codeforces.com/terms",
+      "visible": true,
+      "rect": {
+        "x": 753.0166625976562,
+        "y": 13628.1337890625,
+        "width": 106.38333129882812,
+        "height": 13
+      }
+    },
+    {
+      "id": "el-465",
+      "tag": "a",
+      "label": "",
+      "href": "https://telegram.org/",
+      "visible": true,
+      "rect": {
+        "x": 737.5,
+        "y": 13737.1337890625,
+        "width": 60,
+        "height": 16
+      }
+    },
+    {
+      "id": "el-466",
+      "tag": "input",
+      "label": "",
+      "href": null,
+      "visible": false,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}
+
+

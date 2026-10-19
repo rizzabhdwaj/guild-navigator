@@ -1,61 +1,34 @@
-import type { ElementInfo, Req, Res } from "./messages";
+import type { Req, Res } from "./messages";
+import { extractPageSnapshot, getStoredElements, readContext } from "./snapshot";
+import { clickElement } from "./actions";
 
 // CONTENT SCRIPT — injected into every page (see manifest.json).
-// It is the extension's "eyes": it reads the page's DOM and reports back.
-// It cannot open the sidebar or run browser-level APIs.
+// It is the extension's "eyes" and "hands": it reads the page's DOM and
+// performs permitted actions. It cannot open the sidebar or run browser APIs.
 
-const SELECTOR = [
-  "a[href]",
-  "button",
-  "input",
-  "select",
-  "textarea",
-  "[role='button']",
-  "[role='link']",
-].join(",");
-
-let counter = 0;
-
-function isVisible(el: HTMLElement): boolean {
-  const r = el.getBoundingClientRect();
-  const s = getComputedStyle(el);
-  return r.width > 0 && r.height > 0 && s.visibility !== "hidden" && s.display !== "none";
-}
-
-function describe(el: HTMLElement): ElementInfo {
-  const r = el.getBoundingClientRect();
-  const label =
-    el.getAttribute("aria-label") ??
-    (el instanceof HTMLInputElement ? el.placeholder : el.innerText);
-  return {
-    id: `el-${++counter}`,
-    tag: el.tagName.toLowerCase(),
-    label: (label || "").trim().slice(0, 100),
-    href: el instanceof HTMLAnchorElement ? el.href : null,
-    visible: isVisible(el),
-    rect: { x: r.x, y: r.y, width: r.width, height: r.height },
-  };
-}
-
-function scanPage(): Res {
-  const found = new Set<HTMLElement>();
-  for (const el of document.querySelectorAll<HTMLElement>(SELECTOR)) found.add(el);
-  return {
-    kind: "snapshot",
-    snapshot: {
-      url: location.href,
-      title: document.title,
-      capturedAt: Date.now(),
-      elements: [...found].map(describe),
-    },
-  };
+function handle(req: Req): Res | Promise<Res> {
+  switch (req.type) {
+    case "SCAN_PAGE":
+      return { kind: "snapshot", snapshot: extractPageSnapshot(req.limits) };
+    case "GET_ELEMENTS": {
+      const { elements, total } = getStoredElements(req.offset, req.limit);
+      return { kind: "elements", elements, total };
+    }
+    case "GET_CONTEXT":
+      return { kind: "context", value: readContext(req.request) };
+    case "CLICK_ELEMENT":
+      return clickElement(req.elementId).then((result) => ({ kind: "action", result }));
+  }
 }
 
 // Guard so we don't register twice if the script is injected more than once.
 if (!(window as unknown as { __guildLoaded?: boolean }).__guildLoaded) {
   (window as unknown as { __guildLoaded?: boolean }).__guildLoaded = true;
   browser.runtime.onMessage.addListener((req: Req, _sender, sendResponse) => {
-    if (req.type === "SCAN_PAGE") sendResponse(scanPage());
-    return true;
+    Promise.resolve()
+      .then(() => handle(req))
+      .then(sendResponse)
+      .catch((error) => sendResponse({ kind: "error", error: String(error) } satisfies Res));
+    return true; // keep the message channel open for the async response
   });
 }
