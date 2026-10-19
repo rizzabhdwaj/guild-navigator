@@ -1,10 +1,10 @@
-import { useState } from "react";
-import type { PageSnapshot, Req, Res } from "../messages";
-import { executeTool, type ToolResult } from "../tools";
+import { useRef, useState } from "react";
+import type { Req, Res } from "../messages";
+import { OPENROUTER_KEY, OPENROUTER_MODEL, createOpenRouterModel, runAgent } from "../agent";
 
-// SIDEBAR — a normal React app. It has no access to web pages; it only talks
-// to the content script by messages. For now it exposes the two skills as
-// manual controls so they can be exercised without an LLM.
+// SIDEBAR — a normal React app. It has no access to web pages; it only talks to
+// the content script by messages. The agent loop runs here and reaches the page
+// exclusively through the validated tool executor.
 
 // Send a message to the content script in the active tab. The content script
 // may be missing on a page opened before install, so we inject it and retry —
@@ -22,87 +22,113 @@ async function sendToPage(req: Req, allowInjectRetry = true): Promise<Res> {
   }
 }
 
-const callPage = (req: Req) => sendToPage(req, req.type !== "CLICK_ELEMENT");
+const callPage = (req: Req) => sendToPage(req, req.type !== "CLICK_ELEMENT" && req.type !== "FILL_FIELD");
 
-function downloadJson(data: unknown, filename: string) {
-  const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = filename;
-  a.click();
-  URL.revokeObjectURL(url);
-}
+type ChatItem = { role: "user" | "assistant" | "reasoning" | "tool"; text: string };
 
 export function App() {
-  const [status, setStatus] = useState("Read the page to see its actionable elements.");
-  const [snapshot, setSnapshot] = useState<PageSnapshot | null>(null);
+  const [messages, setMessages] = useState<ChatItem[]>([]);
+  const [input, setInput] = useState("");
+  const [running, setRunning] = useState(false);
+  const [thinking, setThinking] = useState(false);
+  const abortRef = useRef<AbortController | null>(null);
+  const add = (item: ChatItem) => setMessages((previous) => [...previous, item]);
 
-  // read_page
-  const scan = async () => {
-    const result: ToolResult = await executeTool("read_page", {}, callPage);
-    if (!result.ok) {
-      setStatus(result.error ?? "read_page failed.");
+  const send = async () => {
+    const goal = input.trim();
+    if (!goal || running) return;
+    if (!OPENROUTER_KEY) {
+      add({ role: "assistant", text: "Missing OPENROUTER_KEY. Add it to apps/extension/.env and rebuild." });
       return;
     }
-    const snap = result.data as PageSnapshot;
-    setSnapshot(snap);
-    const { included, omitted } = snap.stats;
-    setStatus(`Read ${included} elements${omitted ? ` (${omitted} omitted)` : ""}.`);
-  };
 
-  // press_button, then re-observe to verify (never trust the click alone).
-  const press = async (elementId: string) => {
-    const result = await executeTool("press_button", { elementId }, callPage);
-    if (!result.ok) {
-      setStatus(`press_button failed: ${result.error}`);
-      return;
+    setInput("");
+    add({ role: "user", text: goal });
+    setRunning(true);
+
+    const controller = new AbortController();
+    abortRef.current = controller;
+    try {
+      const model = createOpenRouterModel({ apiKey: OPENROUTER_KEY });
+      const finalText = await runAgent({
+        task: goal,
+        model,
+        callPage,
+        signal: controller.signal,
+        onEvent: (event) => {
+          if (event.type === "thinking") setThinking(event.active);
+          else if (event.type === "reasoning") add({ role: "reasoning", text: event.text });
+          else add({ role: "tool", text: `${event.name}: ${event.detail}` });
+        },
+      });
+      add({ role: "assistant", text: finalText });
+    } catch (error) {
+      const aborted = error instanceof DOMException && error.name === "AbortError";
+      add({ role: "assistant", text: aborted ? "Stopped." : `Error: ${String(error)}` });
+    } finally {
+      setThinking(false);
+      setRunning(false);
+      abortRef.current = null;
     }
-    const action = result.data as { message: string; pageChanged: boolean };
-    setStatus(`${action.message}${action.pageChanged ? " Page changed." : " No visible change."}`);
-    await scan();
   };
-
-  const interactive = snapshot?.elements.filter((e) => e.interactive) ?? [];
 
   return (
-    <div style={{ padding: 10 }}>
-      <h3 style={{ margin: "0 0 8px" }}>Guild Navigator</h3>
-      <div style={{ display: "flex", gap: 6 }}>
-        <button onClick={scan}>read_page</button>
-        <button
-          disabled={!snapshot}
-          onClick={() => snapshot && downloadJson(snapshot, `page-snapshot-${Date.now()}.json`)}
-        >
-          Save JSON
-        </button>
+    <div style={{ display: "flex", flexDirection: "column", height: "100vh", boxSizing: "border-box" }}>
+      <div style={{ padding: "8px 10px", borderBottom: "1px solid #e5e7eb" }}>
+        <strong>Guild Navigator</strong>
+        <span style={{ fontSize: 10, color: "#999", marginLeft: 6 }}>{OPENROUTER_MODEL}</span>
       </div>
-      <p style={{ fontSize: 11, color: "#666" }}>{status}</p>
 
-      {snapshot && (
-        <ul style={{ listStyle: "none", padding: 0, fontSize: 12 }}>
-          {interactive.slice(0, 50).map((el) => (
-            <li
-              key={el.id}
-              style={{ display: "flex", gap: 6, alignItems: "center", marginBottom: 4 }}
-            >
-              <code style={{ color: "#888" }}>{el.id}</code>
+      <div style={{ flex: 1, overflowY: "auto", padding: 10, fontSize: 12 }}>
+        {messages.length === 0 && (
+          <p style={{ color: "#888" }}>
+            Ask for something on the current page, e.g. “click the Contests link,
+            then tell me the latest contest”.
+          </p>
+        )}
+        {messages.map((message, index) => {
+          const isTool = message.role === "tool";
+          const isReasoning = message.role === "reasoning";
+          const label = message.role === "user" ? "You" : isReasoning ? "Thinking" : isTool ? "·" : "Agent";
+          return (
+            <div key={index} style={{ marginBottom: 8 }}>
+              <span style={{ color: isTool ? "#2563eb" : "#111", fontWeight: message.role === "user" ? 600 : 400 }}>
+                {label}
+              </span>{" "}
               <span
-                style={{ flex: 1, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}
+                style={{
+                  color: isReasoning ? "#9ca3af" : isTool ? "#555" : "#111",
+                  fontStyle: isReasoning ? "italic" : "normal",
+                  whiteSpace: "pre-wrap",
+                }}
               >
-                {el.name ?? el.text ?? `(${el.role ?? el.tag})`}
+                {message.text}
               </span>
-              <button
-                disabled={!el.actionable}
-                title={el.actionable ? "press_button" : "not actionable"}
-                onClick={() => press(el.id)}
-              >
-                press
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
+            </div>
+          );
+        })}
+        {thinking && (
+          <div style={{ color: "#9ca3af", fontStyle: "italic" }}>model is thinking…</div>
+        )}
+      </div>
+
+      <div style={{ display: "flex", gap: 6, padding: 8, borderTop: "1px solid #e5e7eb" }}>
+        <input
+          style={{ flex: 1 }}
+          value={input}
+          placeholder="What should I do on this page?"
+          disabled={running}
+          onChange={(event) => setInput(event.target.value)}
+          onKeyDown={(event) => {
+            if (event.key === "Enter") void send();
+          }}
+        />
+        {running ? (
+          <button onClick={() => abortRef.current?.abort()}>Stop</button>
+        ) : (
+          <button onClick={() => void send()}>Send</button>
+        )}
+      </div>
     </div>
   );
 }

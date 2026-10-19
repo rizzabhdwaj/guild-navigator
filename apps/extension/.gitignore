@@ -3,3 +3,5 @@ dist/
 dist-tests/
 web-ext-artifacts/
 *.log
+.env
+.env.*

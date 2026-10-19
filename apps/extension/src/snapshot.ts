@@ -109,6 +109,11 @@ export function isElementActionable(el: HTMLElement): boolean {
   return isRendered(el) && !isDisabled(el) && !isInert(el) && hasInteraction(el, role);
 }
 
+/** Re-check editability against the LIVE DOM (mirrors buildElementRef.editable). */
+export function isElementEditable(el: HTMLElement): boolean {
+  return isRendered(el) && !isDisabled(el) && !isInert(el) && isEditable(el);
+}
+
 /** Retrieve a slice of the most recent full element list (see GET_ELEMENTS). */
 export function getStoredElements(
   offset: number,

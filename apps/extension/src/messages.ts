@@ -208,7 +208,8 @@ export type Req =
   | { type: "SCAN_PAGE"; limits?: Partial<ExtractionLimits> }
   | { type: "GET_ELEMENTS"; offset: number; limit: number }
   | { type: "GET_CONTEXT"; request: ContextRequest }
-  | { type: "CLICK_ELEMENT"; elementId: string };
+  | { type: "CLICK_ELEMENT"; elementId: string }
+  | { type: "FILL_FIELD"; elementId: string; text: string };
 
 export type Res =
   | { kind: "snapshot"; snapshot: PageSnapshot }

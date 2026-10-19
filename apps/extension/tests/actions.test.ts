@@ -1,8 +1,8 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { clickElement } from "../src/actions";
+import { clickElement, fillElement } from "../src/actions";
 import { extractPageSnapshot } from "../src/snapshot";
-import { box, byTag, find, setup } from "./harness";
+import { box, byName, byTag, find, setup } from "./harness";
 
 // The press_button action runs against a real (jsdom) DOM. Calls resolve an
 // elementId, re-check actionability, dispatch a click, then settle briefly.
@@ -79,4 +79,44 @@ test("disabled controls are refused", async () => {
   const result = await clickElement(ref.id);
   assert.equal(result.success, false);
   assert.match(result.message, /not actionable/);
+});
+
+test("filling a text field sets its value and fires input/change", async () => {
+  setup(`<input id="q" aria-label="Query">`);
+  box(document.getElementById("q"));
+  const ref = find(extractPageSnapshot(), byName("Query"));
+
+  let inputFired = false;
+  let changeFired = false;
+  const el = document.getElementById("q")!;
+  el.addEventListener("input", () => (inputFired = true));
+  el.addEventListener("change", () => (changeFired = true));
+
+  const result = await fillElement(ref.id, "hello");
+  assert.equal(result.success, true);
+  assert.equal((el as HTMLInputElement).value, "hello");
+  assert.equal(inputFired, true);
+  assert.equal(changeFired, true);
+  assert.equal(result.message.includes("hello"), false);
+});
+
+test("a password field can be filled but its value is never echoed", async () => {
+  setup(`<input id="p" type="password" aria-label="Password">`);
+  box(document.getElementById("p"));
+  const ref = find(extractPageSnapshot(), byName("Password"));
+
+  const result = await fillElement(ref.id, "s3cret!");
+  assert.equal(result.success, true);
+  assert.equal((document.getElementById("p") as HTMLInputElement).value, "s3cret!");
+  assert.equal(result.message.includes("s3cret!"), false);
+});
+
+test("non-text elements are refused by fill_field", async () => {
+  setup(`<button id="b">Go</button>`);
+  box(document.getElementById("b"));
+  const ref = find(extractPageSnapshot(), byTag("button"));
+
+  const result = await fillElement(ref.id, "x");
+  assert.equal(result.success, false);
+  assert.match(result.message, /not a text field/);
 });

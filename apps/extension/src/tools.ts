@@ -7,7 +7,7 @@ import type { PageSnapshot, Req, Res } from "./messages";
 // This file contains NO LLM code. It is the contract a model will eventually be
 // handed, plus a deterministic executor that validates and dispatches calls.
 
-export type ToolName = "read_page" | "press_button";
+export type ToolName = "read_page" | "press_button" | "fill_field";
 
 export interface ToolDefinition {
   name: ToolName;
@@ -56,6 +56,31 @@ export const TOOL_DEFINITIONS: ToolDefinition[] = [
       additionalProperties: false,
     },
   },
+  {
+    name: "fill_field",
+    permission: "interact",
+    description:
+      "Type text into one identified text field (input, textarea, or editable area). " +
+      "Use ONLY elementIds from the most recent read_page; never invent ids. The value " +
+      "is never returned, logged, or stored, so passwords and personal data are not " +
+      "echoed back. Only fill fields the user asked you to fill, then call read_page " +
+      "again before submitting anything.",
+    parameters: {
+      type: "object",
+      properties: {
+        elementId: {
+          type: "string",
+          description: "The text field's elementId from the latest snapshot, e.g. \"e4\".",
+        },
+        text: {
+          type: "string",
+          description: "The exact text to enter into the field.",
+        },
+      },
+      required: ["elementId", "text"],
+      additionalProperties: false,
+    },
+  },
 ];
 
 export function getToolDefinition(name: string): ToolDefinition | null {
@@ -86,8 +111,16 @@ function validate(name: ToolName, raw: unknown): Validation {
 
   const elementId = args.elementId;
   if (typeof elementId !== "string" || elementId.trim() === "") {
-    return { ok: false, error: "press_button requires a non-empty string elementId." };
+    return { ok: false, error: `${name} requires a non-empty string elementId.` };
   }
+
+  if (name === "fill_field") {
+    if (typeof args.text !== "string") {
+      return { ok: false, error: "fill_field requires a string text." };
+    }
+    return { ok: true, args: { elementId: elementId.trim(), text: args.text } };
+  }
+
   return { ok: true, args: { elementId: elementId.trim() } };
 }
 
@@ -114,22 +147,29 @@ export async function executeTool(
     return { ok: false, error: res.kind === "error" ? res.error : `Unexpected reply: ${res.kind}` };
   }
 
-  // press_button
+  // press_button / fill_field — both return a single ActionResult.
+  const request: Req =
+    definition.name === "fill_field"
+      ? { type: "FILL_FIELD", elementId: safeArgs.elementId as string, text: safeArgs.text as string }
+      : { type: "CLICK_ELEMENT", elementId: safeArgs.elementId as string };
+
   let res: Res;
   try {
-    res = await callPage({ type: "CLICK_ELEMENT", elementId: safeArgs.elementId as string });
-  } catch {
-    // A full navigation tears down the content script mid-call; that is a
-    // successful click whose page change must be verified by re-reading.
-    return {
-      ok: true,
-      data: {
-        success: true,
-        message: `Pressed "${safeArgs.elementId}"; the page navigated (response was lost).`,
-        pageChanged: true,
-      },
-      error: undefined,
-    };
+    res = await callPage(request);
+  } catch (error) {
+    if (definition.name === "press_button") {
+      // A full navigation tears down the content script mid-call; that is a
+      // successful click whose page change must be verified by re-reading.
+      return {
+        ok: true,
+        data: {
+          success: true,
+          message: `Pressed "${safeArgs.elementId}"; the page navigated (response was lost).`,
+          pageChanged: true,
+        },
+      };
+    }
+    return { ok: false, error: `The page did not accept the action: ${String(error)}` };
   }
 
   if (res.kind === "action") {

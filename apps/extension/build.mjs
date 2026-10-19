@@ -3,15 +3,42 @@
 //   content script   -> dist/content.js
 //   background       -> dist/background.js
 import { build, context } from "esbuild";
-import { cp, mkdir, rm } from "node:fs/promises";
+import { cp, mkdir, readFile, rm } from "node:fs/promises";
 
 const watch = process.argv.includes("--watch");
+
+// Tiny .env reader (KEY=value). The OpenRouter key is baked into the sidebar
+// bundle at build time. This is fine for a local prototype but NOT for shipping:
+// anyone who can read the extension can read the key.
+async function loadEnv(path) {
+  try {
+    const text = await readFile(path, "utf8");
+    const env = {};
+    for (const line of text.split("\n")) {
+      const match = line.match(/^\s*([\w.]+)\s*=\s*(.*)\s*$/);
+      if (!match) continue;
+      let value = match[2].trim();
+      if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+        value = value.slice(1, -1);
+      }
+      env[match[1]] = value;
+    }
+    return env;
+  } catch {
+    return {};
+  }
+}
+
+const env = await loadEnv(".env");
 
 const shared = {
   bundle: true,
   sourcemap: true,
   target: "firefox109",
-  define: { "process.env.NODE_ENV": watch ? '"development"' : '"production"' },
+  define: {
+    "process.env.NODE_ENV": watch ? '"development"' : '"production"',
+    "process.env.OPENROUTER_KEY": JSON.stringify(env.OPENROUTER_KEY ?? ""),
+  },
 };
 
 const builds = [

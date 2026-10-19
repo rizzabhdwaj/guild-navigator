@@ -1,5 +1,5 @@
 import type { ActionResult } from "./messages";
-import { getElementRef, isElementActionable, resolveElement } from "./snapshot";
+import { getElementRef, isElementActionable, isElementEditable, resolveElement } from "./snapshot";
 
 // ACTIONS — run inside the content script. This is the only place that mutates
 // the page. The model (later) never touches the DOM directly; it can only ask
@@ -66,5 +66,51 @@ export async function clickElement(elementId: string): Promise<ActionResult> {
     success: true,
     message: `Pressed "${label}".`,
     pageChanged,
+  };
+}
+
+/** Set a field's value the React-compatible way (native setter + events). */
+function setFieldValue(el: HTMLElement, value: string): void {
+  if (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement) {
+    const proto = el instanceof HTMLTextAreaElement ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
+    const setter = Object.getOwnPropertyDescriptor(proto, "value")?.set;
+    if (setter) setter.call(el, value);
+    else el.value = value;
+  } else {
+    el.textContent = value;
+  }
+  el.dispatchEvent(new Event("input", { bubbles: true }));
+  el.dispatchEvent(new Event("change", { bubbles: true }));
+}
+
+/**
+ * Type text into one identified field. The value is intentionally never echoed
+ * back in the result: an ActionResult may be logged or shown, and a password
+ * must not leak through it.
+ */
+export async function fillElement(elementId: string, text: string): Promise<ActionResult> {
+  const ref = getElementRef(elementId);
+  if (!ref) return fail(`Unknown elementId "${elementId}". Call read_page first.`);
+
+  const el = resolveElement(elementId);
+  if (!el) return fail(`Element "${elementId}" is no longer on the page. Call read_page again.`);
+
+  if (!ref.editable) return fail(`Element "${elementId}" is not a text field.`);
+  if (!isElementEditable(el)) return fail(`Element "${elementId}" is not editable (hidden, disabled, or read-only).`);
+
+  const beforeFingerprint = domFingerprint();
+  el.focus?.();
+  try {
+    setFieldValue(el, text);
+  } catch (error) {
+    return fail(`Filling "${elementId}" threw: ${String(error)}`);
+  }
+
+  await delay(50);
+  const label = ref.name ?? ref.placeholder ?? elementId;
+  return {
+    success: true,
+    message: `Filled "${label}".`, // never includes the value
+    pageChanged: domFingerprint() !== beforeFingerprint,
   };
 }

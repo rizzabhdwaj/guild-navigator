@@ -1,6 +1,6 @@
 import type { Req, Res } from "./messages";
 import { extractPageSnapshot, getStoredElements, readContext } from "./snapshot";
-import { clickElement } from "./actions";
+import { clickElement, fillElement } from "./actions";
 
 // CONTENT SCRIPT — injected into every page (see manifest.json).
 // It is the extension's "eyes" and "hands": it reads the page's DOM and
@@ -18,6 +18,8 @@ function handle(req: Req): Res | Promise<Res> {
       return { kind: "context", value: readContext(req.request) };
     case "CLICK_ELEMENT":
       return clickElement(req.elementId).then((result) => ({ kind: "action", result }));
+    case "FILL_FIELD":
+      return fillElement(req.elementId, req.text).then((result) => ({ kind: "action", result }));
   }
 }
 

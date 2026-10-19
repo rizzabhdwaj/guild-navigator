@@ -8,13 +8,14 @@ import { executeTool, getToolDefinition, TOOL_DEFINITIONS } from "../src/tools";
 
 const snapshot = { kind: "snapshot", snapshot: { url: "https://x.test", elements: [] } } as unknown as Res;
 
-test("the registry exposes read_page and press_button with schemas", () => {
+test("the registry exposes read_page, press_button and fill_field with schemas", () => {
   assert.deepEqual(
     TOOL_DEFINITIONS.map((t) => t.name),
-    ["read_page", "press_button"],
+    ["read_page", "press_button", "fill_field"],
   );
   assert.equal(getToolDefinition("read_page")?.permission, "read");
   assert.equal(getToolDefinition("press_button")?.permission, "interact");
+  assert.equal(getToolDefinition("fill_field")?.permission, "interact");
   assert.equal(getToolDefinition("nope"), null);
   assert.ok(getToolDefinition("press_button")!.description.includes("never invent ids"));
 });
@@ -64,6 +65,29 @@ test("press_button trims the id and returns the action result", async () => {
   assert.deepEqual(seen, [{ type: "CLICK_ELEMENT", elementId: "e9" }]);
   assert.equal(result.ok, true);
   assert.equal((result.data as { pageChanged: boolean }).pageChanged, true);
+});
+
+test("fill_field validates elementId and text before dispatching", async () => {
+  let called = false;
+  const callPage = async (): Promise<Res> => {
+    called = true;
+    return snapshot;
+  };
+  for (const bad of [{ elementId: "e1" }, { elementId: "e1", text: 5 }, { text: "x" }]) {
+    const result = await executeTool("fill_field", bad, callPage);
+    assert.equal(result.ok, false);
+  }
+  assert.equal(called, false);
+});
+
+test("fill_field dispatches FILL_FIELD with trimmed id and the text", async () => {
+  const seen: Req[] = [];
+  const result = await executeTool("fill_field", { elementId: " e4 ", text: "alice" }, async (req) => {
+    seen.push(req);
+    return { kind: "action", result: { success: true, message: 'Filled "Username".', pageChanged: false } };
+  });
+  assert.deepEqual(seen, [{ type: "FILL_FIELD", elementId: "e4", text: "alice" }]);
+  assert.equal(result.ok, true);
 });
 
 test("a refused action becomes a tool error the model can recover from", async () => {
