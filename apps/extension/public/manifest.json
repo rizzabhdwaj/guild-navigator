@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Guild Navigator",
+  "version": "0.1.0",
+  "description": "Inspect the current page from a side panel.",
+
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+
+  "background": { "scripts": ["background.js"] },
+
+  "content_scripts": [
+    { "matches": ["<all_urls>"], "js": ["content.js"], "run_at": "document_idle" }
+  ],
+
+  "action": { "default_title": "Open Guild Navigator" },
+
+  "sidebar_action": {
+    "default_title": "Guild Navigator",
+    "default_panel": "index.html"
+  },
+
+  "browser_specific_settings": {
+    "gecko": { "id": "guild-navigator@example.com", "strict_min_version": "109.0" }
+  }
+}
