@@ -72,7 +72,10 @@ function fakeCallPage(calls: Req[]): PageCaller {
   return async (req): Promise<Res> => {
     calls.push(req);
     if (req.type === "SCAN_PAGE") {
-      return { kind: "snapshot", snapshot: { stats: { included: 7 }, url: "https://x.test" } } as unknown as Res;
+      return {
+        kind: "snapshot",
+        snapshot: { stats: { included: 7 }, url: "https://x.test", elements: [{ id: "e1" }] },
+      } as unknown as Res;
     }
     return { kind: "action", result: { success: true, message: "Pressed \"Contests\".", pageChanged: true } };
   };
@@ -99,6 +102,7 @@ test("runAgent drives read -> act -> finish and returns the final text", async (
     task: "find the latest contest",
     model,
     callPage: fakeCallPage(calls),
+    autoObserve: false,
     onEvent: (event) => {
       if (event.type === "tool") events.push(`${event.name}:${event.detail}`);
     },
@@ -128,6 +132,7 @@ test("runAgent toggles a thinking state and surfaces reasoning", async () => {
     task: "look",
     model,
     callPage: fakeCallPage([]),
+    autoObserve: false,
     onEvent: (event) => events.push(event),
   });
 
@@ -145,7 +150,7 @@ test("runAgent stops at the step budget", async () => {
       toolCalls: [{ id: "x", name: "read_page", arguments: {} }],
     }),
   };
-  const final = await runAgent({ task: "loop forever", model, callPage: fakeCallPage(calls), maxSteps: 3 });
+  const final = await runAgent({ task: "loop forever", model, callPage: fakeCallPage(calls), maxSteps: 3, autoObserve: false });
   assert.match(final, /maximum number of steps/);
   assert.equal(calls.length, 3);
 });
@@ -163,8 +168,58 @@ test("a tool error is fed back to the model instead of throwing", async () => {
       return responses[i++];
     },
   };
-  const final = await runAgent({ task: "go", model, callPage: fakeCallPage([]) });
+  const final = await runAgent({ task: "go", model, callPage: fakeCallPage([]), autoObserve: false });
   assert.equal(final, "I could not press anything.");
   const toolMessage = prompts[1].find((m) => m.role === "tool");
   assert.ok(toolMessage && toolMessage.role === "tool" && toolMessage.content.includes('"ok":false'));
+});
+
+test("autoObserve reads the page up front and re-reads after a page change", async () => {
+  const calls: Req[] = [];
+  const prompts: AgentMessage[][] = [];
+  let i = 0;
+  const responses = [
+    { content: null, toolCalls: [{ id: "1", name: "press_button", arguments: { elementId: "e9" } }] },
+    { content: "I am on the right page now." },
+  ];
+  const model: AgentModel = {
+    respond: async ({ messages }) => {
+      prompts.push(messages);
+      return responses[i++];
+    },
+  };
+
+  const events: AgentEvent[] = [];
+  const final = await runAgent({
+    task: "navigate to contests",
+    model,
+    callPage: fakeCallPage(calls),
+    onEvent: (event) => events.push(event),
+  });
+
+  assert.equal(final, "I am on the right page now.");
+  // initial read, the click, then an automatic re-read because the page changed
+  assert.deepEqual(calls, [
+    { type: "SCAN_PAGE" },
+    { type: "CLICK_ELEMENT", elementId: "e9" },
+    { type: "SCAN_PAGE" },
+  ]);
+  assert.ok(events.some((e) => e.type === "observe"));
+
+  // The click's tool result must carry the freshly read page.
+  const clickTool = prompts[1].find((m) => m.role === "tool" && m.toolCallId === "1");
+  assert.ok(clickTool && clickTool.role === "tool" && clickTool.content.includes('"page"'));
+});
+
+test("a read_page result does not trigger a redundant re-read", async () => {
+  const calls: Req[] = [];
+  let i = 0;
+  const responses = [
+    { content: null, toolCalls: [{ id: "1", name: "read_page", arguments: {} }] },
+    { content: "nothing more to do" },
+  ];
+  const model: AgentModel = { respond: async () => responses[i++] };
+  await runAgent({ task: "look", model, callPage: fakeCallPage(calls) });
+  // initial auto-read + the model's own read_page, and no extra scan
+  assert.equal(calls.filter((c) => c.type === "SCAN_PAGE").length, 2);
 });

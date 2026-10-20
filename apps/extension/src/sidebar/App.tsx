@@ -1,30 +1,13 @@
 import { useRef, useState } from "react";
-import type { Req, Res } from "../messages";
 import { OPENROUTER_KEY, OPENROUTER_MODEL, createOpenRouterModel, runAgent } from "../agent";
+import { callPage } from "./page";
 
 // SIDEBAR — a normal React app. It has no access to web pages; it only talks to
 // the content script by messages. The agent loop runs here and reaches the page
-// exclusively through the validated tool executor.
+// exclusively through the validated tool executor (and navigation-aware page
+// transport).
 
-// Send a message to the content script in the active tab. The content script
-// may be missing on a page opened before install, so we inject it and retry —
-// but only for read operations. During a click the page may navigate, which
-// drops the response; that must surface as-is, not be retried on the new page.
-async function sendToPage(req: Req, allowInjectRetry = true): Promise<Res> {
-  const [tab] = await browser.tabs.query({ active: true, currentWindow: true });
-  if (!tab?.id) return { kind: "error", error: "No active tab." };
-  try {
-    return await browser.tabs.sendMessage(tab.id, req);
-  } catch (error) {
-    if (!allowInjectRetry) throw error;
-    await browser.scripting.executeScript({ target: { tabId: tab.id }, files: ["content.js"] });
-    return await browser.tabs.sendMessage(tab.id, req);
-  }
-}
-
-const callPage = (req: Req) => sendToPage(req, req.type !== "CLICK_ELEMENT" && req.type !== "FILL_FIELD");
-
-type ChatItem = { role: "user" | "assistant" | "reasoning" | "tool"; text: string };
+type ChatItem = { role: "user" | "assistant" | "reasoning" | "tool" | "observe"; text: string };
 
 export function App() {
   const [messages, setMessages] = useState<ChatItem[]>([]);
@@ -58,6 +41,7 @@ export function App() {
         onEvent: (event) => {
           if (event.type === "thinking") setThinking(event.active);
           else if (event.type === "reasoning") add({ role: "reasoning", text: event.text });
+          else if (event.type === "observe") add({ role: "observe", text: event.detail });
           else add({ role: "tool", text: `${event.name}: ${event.detail}` });
         },
       });
@@ -88,16 +72,25 @@ export function App() {
         )}
         {messages.map((message, index) => {
           const isTool = message.role === "tool";
+          const isObserve = message.role === "observe";
           const isReasoning = message.role === "reasoning";
-          const label = message.role === "user" ? "You" : isReasoning ? "Thinking" : isTool ? "·" : "Agent";
+          const label =
+            message.role === "user"
+              ? "You"
+              : isReasoning
+                ? "Thinking"
+                : isObserve
+                  ? "Page"
+                  : isTool
+                    ? "·"
+                    : "Agent";
+          const color = isObserve ? "#059669" : isTool ? "#2563eb" : isReasoning ? "#9ca3af" : "#111";
           return (
             <div key={index} style={{ marginBottom: 8 }}>
-              <span style={{ color: isTool ? "#2563eb" : "#111", fontWeight: message.role === "user" ? 600 : 400 }}>
-                {label}
-              </span>{" "}
+              <span style={{ color, fontWeight: message.role === "user" ? 600 : 400 }}>{label}</span>{" "}
               <span
                 style={{
-                  color: isReasoning ? "#9ca3af" : isTool ? "#555" : "#111",
+                  color: isObserve ? "#059669" : isReasoning ? "#9ca3af" : isTool ? "#555" : "#111",
                   fontStyle: isReasoning ? "italic" : "normal",
                   whiteSpace: "pre-wrap",
                 }}

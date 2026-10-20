@@ -15,7 +15,17 @@ const delay = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve,
 function domFingerprint(): string {
   const elementCount = document.querySelectorAll("*").length;
   const textLength = document.body?.textContent?.length ?? 0;
-  return `${document.title}|${elementCount}|${textLength}`;
+  // Values are intentionally reduced to metadata. This detects controlled-form
+  // updates without ever putting a field value into a result or log.
+  const formState = Array.from(document.querySelectorAll("input, textarea, select, [contenteditable='true']"))
+    .map((node) => {
+      const element = node as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement | HTMLElement;
+      const value = "value" in element ? String(element.value) : element.textContent ?? "";
+      const checked = "checked" in element ? String(element.checked) : "";
+      return `${element.tagName}:${value.length}:${checked}`;
+    })
+    .join(",");
+  return `${document.title}|${elementCount}|${textLength}|${formState}`;
 }
 
 function fail(message: string): ActionResult {
@@ -98,7 +108,6 @@ export async function fillElement(elementId: string, text: string): Promise<Acti
   if (!ref.editable) return fail(`Element "${elementId}" is not a text field.`);
   if (!isElementEditable(el)) return fail(`Element "${elementId}" is not editable (hidden, disabled, or read-only).`);
 
-  const beforeFingerprint = domFingerprint();
   el.focus?.();
   try {
     setFieldValue(el, text);
@@ -111,6 +120,8 @@ export async function fillElement(elementId: string, text: string): Promise<Acti
   return {
     success: true,
     message: `Filled "${label}".`, // never includes the value
-    pageChanged: domFingerprint() !== beforeFingerprint,
+    // A fill is a state mutation even when the requested value already matches;
+    // re-reading lets controlled forms expose validation or dependent changes.
+    pageChanged: true,
   };
 }

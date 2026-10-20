@@ -1,4 +1,5 @@
 import { TOOL_DEFINITIONS, executeTool, type PageCaller, type ToolDefinition } from "./tools";
+import type { PageSnapshot } from "./messages";
 
 // AGENT — the LLM half. Two pieces live here:
 //   1. a provider adapter (OpenRouter, OpenAI-compatible) behind AgentModel;
@@ -196,6 +197,7 @@ export function createOpenRouterModel(config: { apiKey: string; model?: string }
 export type AgentEvent =
   | { type: "thinking"; active: boolean }
   | { type: "reasoning"; text: string }
+  | { type: "observe"; detail: string }
   | { type: "tool"; name: string; detail: string };
 
 export interface AgentRunOptions {
@@ -205,6 +207,28 @@ export interface AgentRunOptions {
   maxSteps?: number;
   signal?: AbortSignal;
   onEvent?: (event: AgentEvent) => void;
+  /** Auto-read the page up front and again after every page-changing action. */
+  autoObserve?: boolean;
+}
+
+/** Read the current page through the same validated transport as the tools. */
+function throwIfAborted(signal?: AbortSignal): void {
+  if (signal?.aborted) throw new DOMException("The agent was stopped.", "AbortError");
+}
+
+async function readPage(callPage: PageCaller, signal?: AbortSignal): Promise<PageSnapshot | null> {
+  throwIfAborted(signal);
+  try {
+    const res = await callPage({ type: "SCAN_PAGE" });
+    return res.kind === "snapshot" ? res.snapshot : null;
+  } catch {
+    throwIfAborted(signal);
+    return null;
+  }
+}
+
+function didPageChange(data: unknown): boolean {
+  return !!data && typeof data === "object" && (data as { pageChanged?: unknown }).pageChanged === true;
 }
 
 function summarize(name: string, data: unknown): string {
@@ -223,15 +247,31 @@ function summarize(name: string, data: unknown): string {
  * Observe -> decide -> act -> verify, until the model stops calling tools.
  * The model chooses each step; this loop owns execution, validation,
  * permission (via the registry) and the step budget.
+ *
+ * When `autoObserve` is on, the loop reads the page before the first model
+ * turn and re-reads it whenever an action reports a page change, so the model
+ * always reasons about the page that is actually loaded.
  */
 export async function runAgent(options: AgentRunOptions): Promise<string> {
-  const { task, model, callPage, maxSteps = 12, signal, onEvent } = options;
+  const { task, model, callPage, maxSteps = 12, signal, onEvent, autoObserve = true } = options;
   const messages: AgentMessage[] = [
     { role: "system", content: SYSTEM_PROMPT },
     { role: "user", content: task },
   ];
 
+  if (autoObserve) {
+    const initial = await readPage(callPage, signal);
+    if (initial) {
+      onEvent?.({ type: "observe", detail: `read ${initial.elements.length} elements on ${initial.url}` });
+      messages.push({
+        role: "user",
+        content: `Current page snapshot (auto-read):\n${JSON.stringify(initial)}`,
+      });
+    }
+  }
+
   for (let step = 0; step < maxSteps; step++) {
+    throwIfAborted(signal);
     onEvent?.({ type: "thinking", active: true });
     let response: AgentModelResponse;
     try {
@@ -248,8 +288,24 @@ export async function runAgent(options: AgentRunOptions): Promise<string> {
     }
 
     for (const call of response.toolCalls) {
+      throwIfAborted(signal);
       const result = await executeTool(call.name, call.arguments, callPage);
-      messages.push({ role: "tool", toolCallId: call.id, content: JSON.stringify(result) });
+
+      // Re-observe automatically after anything that changed the page.
+      let content: unknown = result;
+      if (result.ok && autoObserve && didPageChange(result.data)) {
+        onEvent?.({ type: "observe", detail: `page changed after ${call.name} — re-reading` });
+        const fresh = await readPage(callPage, signal);
+        if (fresh) {
+          content = {
+            ...result,
+            data: { ...(result.data as Record<string, unknown>), page: fresh },
+          };
+          onEvent?.({ type: "observe", detail: `now on ${fresh.url}` });
+        }
+      }
+
+      messages.push({ role: "tool", toolCallId: call.id, content: JSON.stringify(content) });
       onEvent?.({
         type: "tool",
         name: call.name,

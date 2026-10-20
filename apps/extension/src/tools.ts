@@ -157,18 +157,6 @@ export async function executeTool(
   try {
     res = await callPage(request);
   } catch (error) {
-    if (definition.name === "press_button") {
-      // A full navigation tears down the content script mid-call; that is a
-      // successful click whose page change must be verified by re-reading.
-      return {
-        ok: true,
-        data: {
-          success: true,
-          message: `Pressed "${safeArgs.elementId}"; the page navigated (response was lost).`,
-          pageChanged: true,
-        },
-      };
-    }
     return { ok: false, error: `The page did not accept the action: ${String(error)}` };
   }
 

@@ -99,10 +99,10 @@ test("a refused action becomes a tool error the model can recover from", async (
   assert.equal(result.error, "Element is not actionable.");
 });
 
-test("a dropped response during navigation is treated as a successful change", async () => {
+test("a transport failure is reported instead of being mistaken for navigation", async () => {
   const result = await executeTool("press_button", { elementId: "e1" }, async () => {
     throw new Error("Could not establish connection. Receiving end does not exist.");
   });
-  assert.equal(result.ok, true);
-  assert.equal((result.data as { pageChanged: boolean }).pageChanged, true);
+  assert.equal(result.ok, false);
+  assert.match(result.error!, /did not accept the action/);
 });

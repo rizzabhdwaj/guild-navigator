@@ -100,6 +100,18 @@ test("filling a text field sets its value and fires input/change", async () => {
   assert.equal(result.message.includes("hello"), false);
 });
 
+test("filling a text field reports the form state change", async () => {
+  setup(`<label for="name">Name</label><input id="name">`);
+  box(document.getElementById("name"));
+  const snapshot = extractPageSnapshot();
+  const field = snapshot.elements.find((element) => element.name === "Name");
+  assert.ok(field);
+
+  const result = await fillElement(field.id, "Alice");
+  assert.equal(result.success, true);
+  assert.equal(result.pageChanged, true);
+});
+
 test("a password field can be filled but its value is never echoed", async () => {
   setup(`<input id="p" type="password" aria-label="Password">`);
   box(document.getElementById("p"));
