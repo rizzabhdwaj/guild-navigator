@@ -519,7 +519,8 @@ function isEditable(el: HTMLElement): boolean {
     return !el.readOnly && !el.disabled && !NON_TEXT_INPUT_TYPES.has(el.type.toLowerCase());
   }
   if (el instanceof HTMLTextAreaElement) return !el.readOnly && !el.disabled;
-  if (el.isContentEditable) return true;
+  if (el.isContentEditable || el.getAttribute("contenteditable") === "true" || el.getAttribute("contenteditable") === "") return true;
+  if (el.matches("textarea.inputarea, textarea[class*='inputarea'], .cm-content")) return true;
   return false;
 }
 
@@ -535,7 +536,8 @@ function hasInteraction(el: HTMLElement, role: string | null): boolean {
   const tag = el.tagName.toLowerCase();
   if (tag === "a" || tag === "area") return el.hasAttribute("href");
   if (["button", "input", "select", "textarea"].includes(tag)) return true;
-  if (el.isContentEditable) return true;
+  if (el.isContentEditable || el.getAttribute("contenteditable") === "true" || el.getAttribute("contenteditable") === "") return true;
+  if (el.matches("textarea.inputarea, textarea[class*='inputarea'], .cm-content")) return true;
   if (role !== null && ACTIONABLE_ROLES.has(role)) return true;
   return el.hasAttribute("onclick");
 }
@@ -591,20 +593,20 @@ function isSensitiveField(el: HTMLElement): boolean {
   return false;
 }
 
-function safeValue(el: HTMLElement, limits: ExtractionLimits): string | null {
-  if (isSensitiveField(el)) return null;
+function safeValue(el: HTMLElement, limits: ExtractionLimits): { value: string | null; truncated: boolean } {
+  if (isSensitiveField(el)) return { value: null, truncated: false };
   if (el instanceof HTMLInputElement) {
     if (["password", "hidden", "file", "checkbox", "radio"].includes(el.type.toLowerCase())) {
-      return null;
+      return { value: null, truncated: false };
     }
     const value = normalizeSpace(el.value);
-    return value ? truncate(value, limits.maxTextLength) : null;
+    return { value: value ? truncate(value, limits.maxTextLength) : null, truncated: value.length > limits.maxTextLength };
   }
   if (el instanceof HTMLTextAreaElement || el instanceof HTMLSelectElement) {
     const value = normalizeSpace(el.value);
-    return value ? truncate(value, limits.maxTextLength) : null;
+    return { value: value ? truncate(value, limits.maxTextLength) : null, truncated: value.length > limits.maxTextLength };
   }
-  return null;
+  return { value: null, truncated: false };
 }
 
 function selectOptions(
@@ -640,6 +642,8 @@ const STRONG_SELECTOR = [
   "textarea",
   "[contenteditable='']",
   "[contenteditable='true']",
+  "textarea.inputarea",
+  ".cm-content",
 ].join(",");
 
 function collectAllElements(): HTMLElement[] {
@@ -979,6 +983,7 @@ function buildElementRef(el: HTMLElement, limits: ExtractionLimits): ElementRef 
   const inert = isInert(el);
   const interactive = hasInteraction(el, role);
   const { options, truncated } = selectOptions(el, limits);
+  const valueInfo = safeValue(el, limits);
   const name = accessibleName(el, role, limits);
 
   const form = el.closest("form");
@@ -1007,7 +1012,8 @@ function buildElementRef(el: HTMLElement, limits: ExtractionLimits): ElementRef 
     domName: el.getAttribute("name"),
     href: el instanceof HTMLAnchorElement || el instanceof HTMLAreaElement ? el.href : null,
     placeholder: el.getAttribute("placeholder"),
-    value: safeValue(el, limits),
+    value: valueInfo.value,
+    valueTruncated: valueInfo.truncated,
     required: isRequired(el),
     disabled,
     readonly: isReadonly(el),
@@ -1365,5 +1371,3 @@ export function extractPageSnapshot(overrides?: Partial<ExtractionLimits>): Page
     limits,
   };
 }
-
-

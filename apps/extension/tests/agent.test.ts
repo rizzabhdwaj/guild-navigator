@@ -7,6 +7,7 @@ import {
   type AgentMessage,
   type AgentModel,
   buildRequestBody,
+  createOpenRouterModel,
   extractReasoning,
   parseToolArguments,
   runAgent,
@@ -66,6 +67,32 @@ test("malformed tool arguments degrade to an empty object", () => {
   assert.deepEqual(parseToolArguments("{not json"), {});
   assert.deepEqual(parseToolArguments("[1,2]"), {});
   assert.deepEqual(parseToolArguments(42), {});
+});
+
+test("OpenRouter surfaces provider errors even when the HTTP response is successful", async () => {
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => new Response(JSON.stringify({ error: { message: "No endpoints available" } }), { status: 200 });
+  try {
+    await assert.rejects(
+      createOpenRouterModel({ apiKey: "test" }).respond({ messages: [], tools: [] }),
+      /OpenRouter: No endpoints available/,
+    );
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
+test("OpenRouter explains an empty choices response", async () => {
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => new Response(JSON.stringify({ choices: [] }), { status: 200 });
+  try {
+    await assert.rejects(
+      createOpenRouterModel({ apiKey: "test" }).respond({ messages: [], tools: [] }),
+      /no assistant message.*model may be unavailable/,
+    );
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
 });
 
 function fakeCallPage(calls: Req[]): PageCaller {

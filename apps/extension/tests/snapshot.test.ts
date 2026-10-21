@@ -71,6 +71,22 @@ test("custom ARIA controls expose role and state", () => {
   assert.equal(ref.focusable, true);
 });
 
+test("code editor surfaces as an editable textbox", () => {
+  setup(`<textarea class="inputarea" aria-label="Code editor"></textarea>`);
+  box(document.querySelector("textarea"));
+  const editor = find(extractPageSnapshot(), byName("Code editor"));
+  assert.equal(editor.editable, true);
+  assert.equal(editor.interactive, true);
+});
+
+test("long field values are marked as previews rather than appearing truncated", () => {
+  setup(`<textarea aria-label="Code editor">abcdefghijklmnop</textarea>`);
+  box(document.querySelector("textarea"));
+  const editor = find(extractPageSnapshot({ maxTextLength: 10 }), byName("Code editor"));
+  assert.equal(editor.valueTruncated, true);
+  assert.match(editor.value ?? "", /…$/);
+});
+
 test("forms, controls and select options are linked", () => {
   setup(`<form id="f" aria-label="Booking">
            <select id="s" aria-label="Room">

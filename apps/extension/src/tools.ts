@@ -43,7 +43,8 @@ export const TOOL_DEFINITIONS: ToolDefinition[] = [
       "Clicking a link may navigate away from the current page. A successful result " +
       "means the click was dispatched, NOT that the intended outcome happened — call " +
       "read_page again to verify. Do not use this to submit forms, register, purchase, " +
-      "or take other consequential actions without explicit user authorization.",
+      "or take other consequential actions without explicit user authorization. Submission " +
+      "controls are blocked until the user explicitly confirms submission.",
     parameters: {
       type: "object",
       properties: {
@@ -60,7 +61,8 @@ export const TOOL_DEFINITIONS: ToolDefinition[] = [
     name: "fill_field",
     permission: "interact",
     description:
-      "Type text into one identified text field (input, textarea, or editable area). " +
+      "Replace the complete contents of one identified text field or code editor " +
+      "(input, textarea, or editable area); never append to existing code. " +
       "Use ONLY elementIds from the most recent read_page; never invent ids. The value " +
       "is never returned, logged, or stored, so passwords and personal data are not " +
       "echoed back. Only fill fields the user asked you to fill, then call read_page " +

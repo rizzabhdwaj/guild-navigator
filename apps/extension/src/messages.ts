@@ -70,6 +70,8 @@ export interface ElementRef {
   placeholder: string | null;
   /** Current value, omitted for sensitive fields. */
   value: string | null;
+  /** True when value is only a bounded preview and not the complete value. */
+  valueTruncated: boolean;
 
   required: boolean;
   disabled: boolean;

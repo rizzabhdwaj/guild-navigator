@@ -32,6 +32,22 @@ function fail(message: string): ActionResult {
   return { success: false, message, pageChanged: false };
 }
 
+function controlLabel(ref: { name: string | null; text: string | null }): string {
+  return `${ref.name ?? ""} ${ref.text ?? ""}`.trim().toLowerCase();
+}
+
+function isSubmissionControl(ref: { tag: string; name: string | null; text: string | null; type: string | null }): boolean {
+  return (ref.tag === "input" && ref.type === "submit") || /\bsubmit\b/.test(controlLabel(ref));
+}
+
+function dispatchInput(el: HTMLElement): void {
+  try {
+    el.dispatchEvent(new InputEvent("input", { bubbles: true, inputType: "insertText" }));
+  } catch {
+    el.dispatchEvent(new Event("input", { bubbles: true }));
+  }
+}
+
 /**
  * Press one identified interactive element.
  *
@@ -48,6 +64,10 @@ export async function clickElement(elementId: string): Promise<ActionResult> {
   if (!el) return fail(`Element "${elementId}" is no longer on the page. Call read_page again.`);
 
   if (!ref.interactive) return fail(`Element "${elementId}" is not interactive.`);
+
+  if (isSubmissionControl(ref)) {
+    return fail("Submission controls are blocked until the user explicitly confirms submission.");
+  }
 
   if (!isElementActionable(el)) {
     return fail(`Element "${elementId}" is not actionable (hidden, disabled, or inert).`);
@@ -86,10 +106,21 @@ function setFieldValue(el: HTMLElement, value: string): void {
     const setter = Object.getOwnPropertyDescriptor(proto, "value")?.set;
     if (setter) setter.call(el, value);
     else el.value = value;
+    dispatchInput(el);
+  } else if (el.isContentEditable || el.getAttribute("contenteditable") === "true" || el.getAttribute("contenteditable") === "") {
+    const selection = el.ownerDocument.getSelection();
+    const range = el.ownerDocument.createRange();
+    range.selectNodeContents(el);
+    selection?.removeAllRanges();
+    selection?.addRange(range);
+    const inserted = el.ownerDocument.execCommand?.("insertText", false, value) ?? false;
+    if (!inserted) el.textContent = value;
   } else {
     el.textContent = value;
   }
-  el.dispatchEvent(new Event("input", { bubbles: true }));
+  if (!(el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement)) {
+    dispatchInput(el);
+  }
   el.dispatchEvent(new Event("change", { bubbles: true }));
 }
 
@@ -119,7 +150,7 @@ export async function fillElement(elementId: string, text: string): Promise<Acti
   const label = ref.name ?? ref.placeholder ?? elementId;
   return {
     success: true,
-    message: `Filled "${label}".`, // never includes the value
+    message: `Filled "${label}" (${text.length} characters).`, // never includes the value
     // A fill is a state mutation even when the requested value already matches;
     // re-reading lets controlled forms expose validation or dependent changes.
     pageChanged: true,

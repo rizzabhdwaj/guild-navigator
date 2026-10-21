@@ -112,6 +112,16 @@ test("filling a text field reports the form state change", async () => {
   assert.equal(result.pageChanged, true);
 });
 
+test("filling a contenteditable editor replaces its contents", async () => {
+  setup(`<div id="editor" contenteditable="true" role="textbox" aria-label="Code editor">old code</div>`);
+  box(document.getElementById("editor"));
+  const ref = find(extractPageSnapshot(), byName("Code editor"));
+
+  const result = await fillElement(ref.id, "new code");
+  assert.equal(result.success, true);
+  assert.equal(document.getElementById("editor")!.textContent, "new code");
+});
+
 test("a password field can be filled but its value is never echoed", async () => {
   setup(`<input id="p" type="password" aria-label="Password">`);
   box(document.getElementById("p"));
@@ -131,4 +141,14 @@ test("non-text elements are refused by fill_field", async () => {
   const result = await fillElement(ref.id, "x");
   assert.equal(result.success, false);
   assert.match(result.message, /not a text field/);
+});
+
+test("submission controls are blocked by the page action", async () => {
+  setup(`<button id="submit">Submit Solution</button>`);
+  box(document.getElementById("submit"));
+  const ref = find(extractPageSnapshot(), byName("Submit Solution"));
+
+  const result = await clickElement(ref.id);
+  assert.equal(result.success, false);
+  assert.match(result.message, /blocked/);
 });

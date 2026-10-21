@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { OPENROUTER_KEY, OPENROUTER_MODEL, createOpenRouterModel, runAgent } from "../agent";
+import { OPENROUTER_DEBUG, OPENROUTER_KEY, OPENROUTER_MODEL, createOpenRouterModel, runAgent } from "../agent";
 import { callPage } from "./page";
 
 // SIDEBAR — a normal React app. It has no access to web pages; it only talks to
@@ -32,7 +32,7 @@ export function App() {
     const controller = new AbortController();
     abortRef.current = controller;
     try {
-      const model = createOpenRouterModel({ apiKey: OPENROUTER_KEY });
+      const model = createOpenRouterModel({ apiKey: OPENROUTER_KEY, debug: OPENROUTER_DEBUG });
       const finalText = await runAgent({
         task: goal,
         model,

@@ -38,6 +38,7 @@ const shared = {
   define: {
     "process.env.NODE_ENV": watch ? '"development"' : '"production"',
     "process.env.OPENROUTER_KEY": JSON.stringify(env.OPENROUTER_KEY ?? ""),
+    "process.env.OPENROUTER_DEBUG": JSON.stringify(env.OPENROUTER_DEBUG ?? ""),
   },
 };
 
